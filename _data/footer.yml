@@ -1,0 +1,39 @@
+# Copyright text to be displayed at the very bottom of the footer
+copyright-text: OpenAMP Project
+# Set this to false if you do not want the Linaro logo in the footer.
+linaro-branding: true
+# Social Media Icons Row
+social-media-icons: false
+# Display the contact details section
+display-contact-details: false
+# These links are displayed at the very bottom of the footer.
+company-links:
+    - name: Legal
+      url: https://www.linaro.org/legal/
+    - name: Contact
+      url: https://www.linaro.org/contact/
+    - name: Press
+      url: https://www.linaro.org/press/
+second-column:
+    title: GitHub Projects
+    latest-posts: false
+    # Optionally display another list of items
+    items:
+      - name: open-amp
+        url: https://github.com/OpenAMP/open-amp
+      - name: libmetal
+        url: https://github.com/OpenAMP/libmetal
+      - name: meta-openamp
+        url: https://github.com/OpenAMP/meta-openamp
+# Custom Col on the right
+third-column:
+    title: Useful Links
+    items:
+      - name: OpenAMP @ MCA
+        url: http://www.multicore-association.org/workgroup/oamp.php
+      - name: OpenAMP @ GitHub
+        url: https://github.com/OpenAMP/open-amp
+      - name: OpenAMP @ Xilinx
+        url: http://www.wiki.xilinx.com/OpenAMP
+      - name: OpenAMP @ Mentor
+        url: http://www.mentor.com/embedded-multicore-openamp
