@@ -63,3 +63,9 @@ disqus:
 placeholder: /assets/images/content/ml-placeholder.png
 social_media_channels:
   - https://github.com/OpenAMPProject
+
+github_username: OpenAMP
+linkedin_username: false
+facebook_username: false
+youtube_username: false
+twitter_username: false

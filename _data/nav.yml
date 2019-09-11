@@ -3,37 +3,12 @@ search:
     label: OpenAMPProject
 universal-nav: false
 brand:
-    image:
-      enabled: true
-      path: /assets/images/ml-platform-logo.png
+    text: OpenAMP
+    # image:
+    #   enabled: true
+    #   path: /assets/images/ml-platform-logo.png
     url: /
-# pages:
-#     - title: Users
-#       options:
-#         - text: Releases
-#           url: /releases/
-#         - text: Guides
-#           url: /guides/
-#         - text: Mailing Lists & IRC
-#           url: /mailing-lists-and-irc/
-#     - title: Developers
-#       options:
-#         - text: Resources
-#           url: /resources/
-#         - text: Contributing
-#           url: /contributing/
-#         - text: Development Tracker
-#           url: https://developer.mlplatform.org
-#           external: true
-#     - title: Forum
-#       url: https://discuss.mlplatform.org
-#       external: true
-#     - title: Wiki
-#       url: https://developer.mlplatform.org/w/
-#       external: true
-#     - title: About
-#       url: /about/
-#     - title: Blog
-#       url: /blog/
-#     - title: Contact
-#       url: /contact/
+pages:
+    - title: View on GitHub
+      url: https://github.com/OpenAMP
+      external: true
