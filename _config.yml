@@ -1,0 +1,30 @@
+title: OpenAMPProject
+description: >-
+  ArmNN and Arm Compute Library
+url: "https://openampproject.org"
+theme: jumbo-jekyll-theme
+email: contact@linaro.org
+plugins:
+  - jekyll-data
+exclude:
+  - _site
+  - CODEOWNERS
+  - build-site.sh
+  - check-links.sh
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+permalink: /:categories/:title/
+blog_images_dir: assets/images/
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      comments: false
+  -
+    scope:
+      path: "_posts" # an empty string here means all files in the project
+    values:
+      layout: post
+include: ['_pages']

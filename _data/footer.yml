@@ -1,0 +1,39 @@
+# Copyright text to be displayed at the very bottom of the footer
+copyright-text: Open AMP Project
+# Set this to false if you do not want the Linaro logo in the footer.
+linaro-branding: true
+# Social Media Icons Row
+social-media-icons: false
+# Display the contact details section
+display-contact-details: false
+# These links are displayed at the very bottom of the footer.
+company-links:
+    - name: Legal
+      url: https://www.linaro.org/legal/
+    - name: Contact
+      url: /contact/
+    - name: Press
+      url: https://www.linaro.org/press/
+# second-column:
+#     title: Users
+#     latest-posts: false
+#     # Optionally display another list of items
+#     items:
+#       - name: Releases
+#         url: https://mlplatform.org/releases/
+#       - name: Guides
+#         url: https://mlplatform.org/guides/
+#       - name: Mailing Lists & IRC
+#         url: https://mlplatform.org/mailing-lists-and-irc/
+# # Custom Col on the right
+# third-column:
+#     title: Other Resources
+#     items:
+#       - name: Developer Resources
+#         url: /resources/
+#       - name: Development Tracker
+#         url: https://developer.mlplatform.org/
+#       - name: Discussion Forum
+#         url: https://discuss.mlplatform.org/
+#       - name: Wiki
+#         url: https://developer.mlplatform.org/w/
