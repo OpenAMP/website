@@ -1,17 +1,15 @@
-footer .footer-bottom {
-    background-color: #1ba2a8;
+#wrapper footer .footer-main {
+    background: #dc4a4a !important;
 }
+
 #wrapper div#jumbotron.background-image {
     background-repeat: repeat !important;
     background-size: auto !important;
 }
-#wrapper footer h3 {
-    color: #373737;
-}
-#wrapper footer a {
-    color: #373737;
-}
 
 #wrapper footer .footer-bottom a {
     color: #fff;
+}
+#wrapper footer .footer-bottom a:hover {
+    color: $brand-primary;
 }
