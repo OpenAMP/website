@@ -2,8 +2,14 @@
 layout: flow
 title: About
 permalink: /about/
+description: >
+    OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
+jumbotron:
+    title: About
+    description: ""
+    background-image: /assets/images/content/header-bg.jpg
 ---
-# Members
+## Members
 
 **In alphabetical order**
 
@@ -13,7 +19,7 @@ permalink: /about/
 * Wind River
 * Xilinx
 
-# Membership and Participation
+## Membership and Participation
 
 It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee.  Community participation is welcome!
 
