@@ -29,11 +29,5 @@ second-column:
 third-column:
     title: Useful Links
     items:
-      - name: OpenAMP @ MCA
-        url: http://www.multicore-association.org/workgroup/oamp.php
-      - name: OpenAMP @ GitHub
-        url: https://github.com/OpenAMP/open-amp
-      - name: OpenAMP @ Xilinx
-        url: http://www.wiki.xilinx.com/OpenAMP
-      - name: OpenAMP @ Mentor
-        url: http://www.mentor.com/embedded-multicore-openamp
+      - name: OpenAMP TSC call meeting notes
+        url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
