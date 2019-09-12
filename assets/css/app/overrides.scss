@@ -1,10 +1,10 @@
 // Theses are the Overrides of Bootstrap Sass Variables locatted in boostrap/_variables
-$brand-primary: #1ba2a8;
+$brand-primary: #dc4a4a;
 //Home
 $home-page-title-text: #fff;
 $home-page-main-title-color: #fff;
 // Footer
-$footer-bg-color: #9ddcff;
+$footer-bg-color: $brand-primary;
 $footer-text-color: #fff;
 // Sub footer
 $sub-footer-color: #1ba2a8;
@@ -15,9 +15,9 @@ $navbar-text-color: #373737;
 $navbar-height: 66px;
 $navbar-hover-text-color: #fff !default;
 $navbar-hover-background-color: $brand-primary !default;
-$navbar-inverse-bg: #9ddcff;
-$navbar-inverse-color: #373737;
-$navbar-submenu-bg-color: #3e3e3e !default;
+$navbar-inverse-bg: #fff;
+$navbar-inverse-color: #fff;
+$navbar-submenu-bg-color: #fff !default;
 $navbar-submenu-color: #fff !default;
 // Fonts
 @font-face {
