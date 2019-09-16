@@ -1,4 +1,4 @@
-favicon: favicon.png
+favicon: /assets/images/favicon.png
 search-label: OpenAMPProject
 name: OpenAMPProject
 # slogan: Open Source Secure World Software
@@ -18,7 +18,7 @@ newsletter:
 # Blog tags
 tags_enabled: true
 # Jekyll social media site settings. Github, LinkedIn, Google+, Facebook and Youtube
-github_username: ArmNNWebsite
+github_username: OpenAMP
 # Blog setup
 blog:
     # Toggle site wide comments display.
