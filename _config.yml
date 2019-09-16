@@ -1,6 +1,6 @@
-title: OpenAMPProject
+title: OpenAMP Project
 description: >-
-  ArmNN and Arm Compute Library
+  OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
 url: "https://openampproject.org"
 theme: jumbo-jekyll-theme
 email: contact@linaro.org
