@@ -4,9 +4,10 @@ search:
 universal-nav: false
 brand:
     text: OpenAMP
-    # image:
-    #   enabled: true
-    #   path: /assets/images/ml-platform-logo.png
+    image:
+      enabled: true
+      svg: true
+      name: openAMPSVG.html
     url: /
 pages:
     - title: About

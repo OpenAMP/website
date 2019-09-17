@@ -13,3 +13,17 @@
 #wrapper footer .footer-bottom a:hover {
     color: $brand-primary;
 }
+.navbar-brand svg {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+        transform: scale(1.5);
+    left: -30px;
+    position: relative;
+}
+
+#jumbotron.overlay:before {
+    opacity: .7;
+}
+#jumbotron.overlay::before {
+    height: 100%;
+}
