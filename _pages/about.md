@@ -10,11 +10,8 @@ jumbotron:
     background-image: /assets/images/content/triangle_background.svg
 flow:
     - row: container_row
+      style: members_row
       sections:
-        - format: title
-          title_content:
-            text: Members
-            size: h2
         - format: members
           style: zoom
           members_content:
@@ -50,10 +47,21 @@ flow:
                     path: /assets/images/members/xilinx.png
                     alt: Xilinx Logo
                 url: https://www.xilinx.com/
-    - row: main_content_row
+    - row: container_row
+      style: main_row
+      sections:
+        - format: title
+          title_content:
+            size: h2
+            text: Membership and Participation
+        - format: text
+          style: text-center
+          text_content:
+            text: >
+                It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee.  Community participation is welcome!
+        - format: text
+          style: text-center
+          text_content:
+            text: >
+                Governance of the community project is overseen by a board of representatives from Member companies.  Member fees support administration for the project, such as the project website and mailing lists.
 ---
-## Membership and Participation
-
-It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee.  Community participation is welcome!
-
-Governance of the community project is overseen by a board of representatives from Member companies.  Member fees support administration for the project, such as the project website and mailing lists.
