@@ -10,43 +10,6 @@ jumbotron:
     include: openamp-jumbotron.html
     background-image: /assets/images/content/triangle_background.svg
 flow:
-    - row: container_row
-      sections:
-        - format: members
-          style: zoom
-          members_content:
-            item_width: "2" #bootstrap col-sm- value e.g 3, 4, 5ths etc
-            items:
-              - name: Arm
-                image:
-                    path: /assets/images/members/arm.jpg
-                    alt: Arm Logo
-                url: https://www.arm.com/
-              - name: Kalray
-                image:
-                    path: /assets/images/members/kalray.jpg
-                    alt: Kalray Logo
-                url: https://www.kalrayinc.com/
-              - name: Linaro Logo
-                image:
-                    path: /assets/images/members/linaro-logo.png
-                    alt: Linaro Logo
-                url: https://www.linaro.org/
-              - name: Mentor Logo
-                image:
-                    path: /assets/images/members/Mentor-ASB.png
-                    alt: Mentor Logo
-                url: https://www.mentor.com/
-              - name: Wind River Logo
-                image:
-                    path: /assets/images/members/WindRiver.png
-                    alt: Wind River Logo
-                url: https://www.windriver.com/
-              - name: Xilinx Logo
-                image:
-                    path: /assets/images/members/xilinx.png
-                    alt: Xilinx Logo
-                url: https://www.xilinx.com/
     - row: main_content_row
 ---
 

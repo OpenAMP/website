@@ -24,3 +24,6 @@
 #jumbotron.overlay:before {
     opacity: .7;
 }
+#jumbotron.overlay::before {
+    height: 100%;
+}
