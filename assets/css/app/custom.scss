@@ -1,17 +1,31 @@
-#wrapper footer .footer-main {
-    background: #dc4a4a !important;
-}
-
-#wrapper div#jumbotron.background-image {
-    background-repeat: repeat !important;
-    background-size: auto !important;
-}
-
-#wrapper footer .footer-bottom a {
-    color: #fff;
-}
-#wrapper footer .footer-bottom a:hover {
-    color: $brand-primary;
+#wrapper {
+    footer {
+        .footer-main {
+            background: #dc4a4a !important;
+        }
+        .footer-bottom {
+            a {
+                color: #fff;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+    div#main_content {
+        background-color: #fbfbfb;
+        border: 1px solid #e9e9e9;
+    }
+    #jumbotron {
+        &:before {
+            opacity: .7;
+            height: 100%;
+        }
+        &.background-image {
+            background-repeat: repeat !important;
+            background-size: auto !important;
+        }
+    }
 }
 .navbar-brand svg {
     -webkit-transform: scale(1.5);
@@ -20,10 +34,8 @@
     left: -30px;
     position: relative;
 }
-
-#jumbotron.overlay:before {
-    opacity: .7;
-}
-#jumbotron.overlay::before {
-    height: 100%;
+@media (max-width: 1000px) {
+    #flow_wrapper .row:first-child {
+        padding-top: 30px;
+    }
 }

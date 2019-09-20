@@ -3,7 +3,7 @@
 #
 #
 # URL of static site
-url: "https://openampproject.org"
+url: "https://www.openampproject.org"
 # Destination folder
 destination: production.openampproject.org
 # Production boolean used in layouts / includes

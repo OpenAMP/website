@@ -1,9 +1,10 @@
 title: OpenAMP Project
 description: >-
   OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
-url: "https://openampproject.org"
+url: "https://www.openampproject.org"
 theme: jumbo-jekyll-theme
 email: contact@linaro.org
+github_repo: https://github.com/OpenAmpProject/website/issues
 plugins:
   - jekyll-data
 exclude:
