@@ -60,7 +60,7 @@ disqus:
     enabled: false
     shortname: openampproject
 # Placeholder for Missing Images
-placeholder: /assets/images/content/ml-placeholder.png
+placeholder: /assets/images/content/openAMP_LOGOMARKX.png
 social_media_channels:
   - https://github.com/OpenAMPProject
 
