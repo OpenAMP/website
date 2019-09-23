@@ -1,9 +1,8 @@
 ---
 title: OpenAMP project joins the Linaro Community Projects division
-category: News
 author: openamp
 layout: post
-date: 2019-09-23 09:00:00
+date: 2019-09-23 01:00:00
 description: >-
   Linaro Ltd, the open source collaborative engineering organization developing
   software for the Arm® ecosystem, announced today the keynote speakers for
@@ -18,25 +17,36 @@ tags:
   - Arm
   - Open
   - Source
-  - Admin
-  - Linaro Connect
-  - linux kernel
+image: /assets/images/content/PR_Linaro_NXP_banner_pic.jpg
 ---
 [San Diego, USA; 23 September 2019] Linaro Community Projects Division, the division of Linaro managing open source community projects with open governance, today announced that the Open Asymmetric Multi-Processing (OpenAMP) project is becoming a Linaro Community Project, joining the already hosted projects Trusted Firmware and devicetree.org. The OpenAMP project aims to standardize interactions between operating environments in a heterogenous embedded system through open source solutions. The founding members of this project include Arm, Kalray, Linaro, Mentor, ST Microelectronics, Wind River and Xilinx. For the most up-to-date list of members, go to [www.openampproject.org](http://www.openampproject.org).
 
-SoCs (system on a chip) are becoming more heterogeneous, with multiple CPU (central processing unit) clusters and special purpose accelerators. As a result, AMP (asymmetric multiprocessor) systems need to be able to run different operating environments side-by-side on the same chip. Until now, however, there has been no standard shared memory scheme for the configuration and interaction between these environments. By creating standards and open source frameworks, the OpenAMP project will simplify the creation of these mixed systems. Becoming a Linaro Community Project will enable a more formal collaborative approach to driving much needed standardization. 
+SoCs (system on a chip) are becoming more heterogeneous, with multiple CPU (central processing unit) clusters and special purpose accelerators. As a result, AMP (asymmetric multiprocessor) systems need to be able to run different operating environments side-by-side on the same chip. Until now, however, there has been no standard shared memory scheme for the configuration and interaction between these environments. By creating standards and open source frameworks, the OpenAMP project will simplify the creation of these mixed systems. Becoming a Linaro Community Project will enable a more formal collaborative approach to driving much needed standardization.
 
-> “Standardization and open source reference implementations are essential to drive the Arm ecosystem forward,'' said Rob Booth, Linaro COO. “We are very pleased to see OpenAMP become a Linaro Community Project and look forward to working with its members on simplifying the creation of AMP systems.” 
+> “Standardization and open source reference implementations are essential to drive the Arm ecosystem forward," said Rob Booth, Linaro COO.
+> “We are very pleased to see OpenAMP become a Linaro Community Project and look forward to working with its members on simplifying the creation of AMP systems.”
+
+<!-- -->
 
 > “Demand for heterogenous SoCs incorporating different types of compute is growing, driven by the complex requirements of applications such as machine learning, autonomous systems, cloud and edge compute,” said Mark Hambleton, vice president of open source software, Arm.  “OpenAMP delivers a common technology for communicating between these processing elements, eliminating the need to design custom drivers, reducing the engineering required and enabling multiple hardware platforms to be supported from a single set of APIs.”
 
+<!-- -->
+
 > “Xilinx sees heterogenous compute as the future," said Tomas Evensen, CTO Embedded Software at Xilinx. “We're proud to collaborate with our peers in the OpenAMP organization to drive the project forward and make it easy for everyone to use and benefit from the technology."
+
+<!-- -->
 
 > "Systems comprised of multiple runtime environments require robust high-speed message-passing infrastructure. OpenAMP addresses this application need for multichip and multicore platforms," said Maarten Koning, Vice President, Wind River Technology Office. "As a founding member, Wind River is proud to participate, support, and contribute to the OpenAMP project to accelerate the development of such systems across a range of industries, including automotive, industrial, and medical."
 
-"We are excited to join the OpenAMP initiative” said Stéphane Cordova, Vice-President of Embedded Business Unit at Kalray. “It’s framework provides a perfect fit to support heterogeneous computing on our intelligent MPPA processor and its manycore architecture. In particular, the possibility to aggregate multiple applications or functions on multiple Operating Systems is really one of the MPPA strengths and will be greatly facilitated with OpenAMP. We are looking for a fruitful cooperation with OpenAMP members."
+<!-- -->
+
+> "We are excited to join the OpenAMP initiative” said Stéphane Cordova, Vice-President of Embedded Business Unit at Kalray. “It’s framework provides a perfect fit to support heterogeneous computing on our intelligent MPPA processor and its manycore architecture. In particular, the possibility to aggregate multiple applications or functions on multiple Operating Systems is really one of the MPPA strengths and will be greatly facilitated with OpenAMP. We are looking for a fruitful cooperation with OpenAMP members."
+
+<!-- -->
 
 > "STMicroelectronics released a new STM32 Microprocessor Family based on heterogeneous cores supporting a mainlined open-source Linux distribution”, said Kamel Kholti, Microprocessor Marketing Manager. “Joining the OpenAMP community project has been an obvious choice for STMicroelectronics to standardize coprocessor management and to contribute to defining system architecture for heterogeneous SoCs."
+
+<!-- -->
 
 > "As a co-creator and founding member, Mentor is excited to see the OpenAMP project become a Linaro Community Project”, said Scot Morrison, General Manager of Embedded Platform Solutions at Mentor Graphics. “Linaro Community Project will provide the much-needed logistics to formalize the collaboration and standardization of OpenAMP. OpenAMP is instrumental in addressing the needs of modern heterogeneous computing platforms with its efficient communication and CPU management components. Mentor will continue to be an active contributor and user of OpenAMP with the Mentor Embedded Multicore Framework, the first commercial implementation of OpenAMP, to address the needs of the market."
 
