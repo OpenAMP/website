@@ -17,7 +17,7 @@ tags:
   - Arm
   - Open
   - Source
-image: /assets/images/content/PR_Linaro_NXP_banner_pic.jpg
+image: /assets/images/social-media-image.png
 ---
 [San Diego, USA; 23 September 2019] Linaro Community Projects Division, the division of Linaro managing open source community projects with open governance, today announced that the Open Asymmetric Multi-Processing (OpenAMP) project is becoming a Linaro Community Project, joining the already hosted projects Trusted Firmware and devicetree.org. The OpenAMP project aims to standardize interactions between operating environments in a heterogenous embedded system through open source solutions. The founding members of this project include Arm, Kalray, Linaro, Mentor, ST Microelectronics, Wind River and Xilinx. For the most up-to-date list of members, go to [www.openampproject.org](http://www.openampproject.org).
 
