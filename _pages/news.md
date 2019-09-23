@@ -1,14 +1,14 @@
 ---
-title: Blog
-permalink: /blog/
+title: News
+permalink: /news/
 layout: post-index
 pagination:
-    title: "Blog - Page :num"
+    title: "News - Page :num"
     enabled: true
     trail:
         before: 4
         after: 4
-    category: blog
+    category: news
 css-package: blog
 blog: true
 _hide_content: true
