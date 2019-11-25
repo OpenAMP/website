@@ -45,6 +45,11 @@ flow:
                 path: /assets/images/members/ST.jpg
                 alt: ST Logo
               url: https://www.st.com/
+            - name: TI Logo
+              image:
+                path: /assets/images/members/texas-instruments.jpg
+                alt: TI Logo
+              url: https://www.ti.com/
             - name: Wind River Logo
               image:
                 path: /assets/images/members/WindRiver.png
