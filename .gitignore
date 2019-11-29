@@ -2,8 +2,8 @@
 .sass-cache
 .jekyll-metadata
 _site
-staging.mlplatform.org
-production.mlplatform.org
+staging.openampproject.org
+production.openampproject.org
 Gemfile.lock
 assets/resized
 
