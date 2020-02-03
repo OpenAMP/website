@@ -1,7 +1,7 @@
 search:
     enabled: false
     label: OpenAMPProject
-universal-nav: true
+universal-nav: false
 brand:
     text: OpenAMP
     image:
