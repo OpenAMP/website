@@ -2,7 +2,7 @@
 title: Utilizing OpenAMP in a Mixed Safety-Critical System talk at Embedded World 2020
 author: openamp
 layout: post
-date: 2020-02-11 23:00:00
+date: 2020-02-18 23:00:00
 description: >-
   With the move to consolidation and the growth on connectivity to the cloud, how can a system obtain the new functionality all while maintaining the safety needs? This has led to the rise of mixed safety-criticality systems on a single embedded device. This session at Embedded World 2020 will explain the use of OpenAMP to solve the requirement of mixing safe and non-safe worlds on a single device.
 categories:
