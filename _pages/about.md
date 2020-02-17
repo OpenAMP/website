@@ -40,6 +40,11 @@ flow:
                 path: /assets/images/members/Mentor-ASB.png
                 alt: Mentor Logo
               url: https://www.mentor.com/
+            - name: Nordic Logo
+              image:
+                path: /assets/images/members/Nordic_RGB_Horiz.jpg
+                alt: Nordic Logo
+              url: https://www.nordicsemi.com/
             - name: ST Logo
               image:
                 path: /assets/images/members/ST.jpg
