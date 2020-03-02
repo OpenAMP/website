@@ -27,5 +27,7 @@ second-column:
 third-column:
     title: Useful Links
     items:
-      - name: OpenAMP TSC call meeting notes
+      - name: OpenAMP call meeting notes
         url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
+      - name: OpenAMP mailing lists
+        url: https://lists.openampproject.org/mailman/listinfo
