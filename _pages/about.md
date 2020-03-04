@@ -82,4 +82,9 @@ flow:
         text_content:
           text: >
             Governance of the community project is overseen by a board of representatives from Member companies.  Member fees support administration for the project, such as the project website and mailing lists.
+      - format: text
+        style: text-center
+        text_content:
+          text: >
+            To get more information about membership, contact [enquiries@openampproject.org](mailto:enquiries@openampproject.org "Enquiries email")
 ---
