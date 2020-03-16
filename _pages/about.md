@@ -81,7 +81,7 @@ flow:
         style: text-center
         text_content:
           text: >
-            Governance of the community project is overseen by a board of representatives from Member companies.  Member fees support administration for the project, such as the project website and mailing lists.
+            Governance of the community project is overseen by a board of representatives from Member companies.  Member fees support administration for the project, such as the project website and mailing lists.  Details of the Governance are in the [Project Charter](../docs/OpenAMPProject_Charter_Approved2020Mar06BoardMeeting.pdf).
       - format: text
         style: text-center
         text_content:
