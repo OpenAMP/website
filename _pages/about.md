@@ -45,6 +45,11 @@ flow:
                 path: /assets/images/members/Nordic_RGB_Horiz.jpg
                 alt: Nordic Logo
               url: https://www.nordicsemi.com/
+            - name: NXP Logo
+              image:
+                path: /assets/images/members/nxp.jpg
+                alt: NXP Logo
+              url: https://www.nxp.com/
             - name: ST Logo
               image:
                 path: /assets/images/members/ST.jpg
