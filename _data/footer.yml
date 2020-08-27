@@ -23,6 +23,8 @@ second-column:
         url: https://github.com/OpenAMP/libmetal
       - name: meta-openamp
         url: https://github.com/OpenAMP/meta-openamp
+      - name: lopper
+        url: https://github.com/devicetree-org/lopper
 # Custom Col on the right
 third-column:
     title: Useful Links
