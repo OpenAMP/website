@@ -5,19 +5,19 @@ permalink: /governance/
 description: |-
   As the OpenAMP Project governance gets defined, it will be documented here.
 
-  Governance discussions are typicaly held during the OpenAMP Technical Steering Committee meetings.
+  Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
 jumbotron:
     triangle-divider: true
     title: Governance
     description: >
         As the OpenAMP Project governance gets defined, it will be documented here.
-        Governance discussions are typicaly held during the OpenAMP Technical Steering Committee meetings.
+        Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
     background-image: /assets/images/content/triangle_background.svg
 ---
 # Introduction
 
 As the OpenAMP Project governance gets defined, it will be documented here.
-Governance discussions are typicaly held during the OpenAMP Technical Steering Committee meetings.
+Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
 
 # Strategic and Technical Direction
 ## Board
@@ -53,7 +53,7 @@ To be discussed at October 2020 TSC call.
 
 # Code of Conduct
 
-OpenAMP Board is in process of working on modified version of the CHAOSS code of conduct.  That will need to be voted upon to be adopted.
+The OpenAMP Board is in the process of working on a modified version of the CHAOSS code of conduct.  That will need to be voted upon to be adopted.
 
 We are looking for a couple volunteers to be part of the Code of Conduct Committee.  Please contact [the board](mailto:board@lists.openampproject.org "E-mail OpenAMP Board") if you are interested.
 
@@ -61,15 +61,15 @@ We are looking for a couple volunteers to be part of the Code of Conduct Committ
 
 ## Maintainers
 
-Maintainers are nominated and voted upon by the TSC.  They should be the only ones who can commit to the repositories.  As with everyone else, they are to use Pull Requests.
+Maintainers are nominated and voted upon by the TSC.  They should be the only ones who can commit to the repositories.  As with everyone else, they must use Pull Requests.
 
-[Arnaud][Arnaud Github] and [Ed][Ed Github] are the maintainers of [libmetal][libmetal Github] and lib [open-amp][open-amp Github]. (2020-02-20)
+[Arnaud Pouliquen][Arnaud Github] and [Ed Mooring][Ed Github] are the maintainers of [libmetal][libmetal Github] and lib [open-amp][open-amp Github]. (2020-02-20)
 
 ## Coding Standards
 
 ### Coding Style
 
-OpenAMP uses the [Zephyr coding style][Zephyr coding style] and has the checkpatch.pl from Zephyr script as part of its continuous integration process.  (2020-02-20)
+OpenAMP uses the [Zephyr coding style][Zephyr coding style] and uses the checkpatch.pl script to automatically review and leave comments on pull requests (continuous integration process). (2020-02-20)
 
 ### MISRA C
 (2020-04-17) There was some interest in making the code easier to certify, but no firm decision to proceed.  Recommendation is to watch what Zephyr and Xen do, then revisit the question.
@@ -98,7 +98,7 @@ Proposed new features should be discussed actively on the mailing list and the t
 
 For a new feature, an application or test must be provided so that we can test that the feature works & continues to be valid in the future.
 
-Travis CI has Zephyr checkpatch.
+OpenAMP CI is relying on the checkpatch tool, using Zephyr coding rules.
 
 TO DO: Add guidelines once they get baked
 
@@ -157,6 +157,8 @@ At this time, no further commits may be made to the release branch unless they f
 The release branch is tagged and the code archived and made accessible for download.
 
 #### Release Maintenance
+
+Topic to be revisited.
 
 See [https://wiki.yoctoproject.org/wiki/Stable_branch_maintenance](https://wiki.yoctoproject.org/wiki/Stable_branch_maintenance)
 
