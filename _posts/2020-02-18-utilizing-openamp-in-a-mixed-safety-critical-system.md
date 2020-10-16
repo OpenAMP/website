@@ -16,6 +16,7 @@ tags:
   - Source
 image: /assets/images/members/Mentor-ASB_small.png
 ---
+
 At Embedded World 2020 in Nuremberg, Germany, Jeff Hancock from Mentor, one of our OpenAMP Project member companies, will be presenting a talk on Utilizing OpenAMP in a Mixed Safety-Critical System.
 
 With the move to consolidation and the growth on connectivity to the cloud, how can a system obtain the new functionality all while maintaining the safety needs? This has led to the rise of mixed safety-criticality systems on a single embedded device. This session will explain the use of OpenAMP to solve the requirement of mixing safe and non-safe worlds on a single device
