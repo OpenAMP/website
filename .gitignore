@@ -6,4 +6,4 @@ staging.openampproject.org
 production.openampproject.org
 Gemfile.lock
 assets/resized
-
+.jekyll-cache
