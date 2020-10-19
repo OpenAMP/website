@@ -46,7 +46,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/social-media-image.png
+      image: /assets/images/content/openAMP_share_image.png
   - scope:
       path: "_pages"
     values:
@@ -58,14 +58,14 @@ defaults:
       layout: post
       is_post: true
       comments: false
-      image: /assets/images/social-media-image.png
+      image: /assets/images/content/openAMP_share_image.png
       strap_image: /assets/images/content/strap_image.png
   - scope:
       path: ""
       type: "authors"
     values:
       layout: author
-      image: /assets/images/social-media-image.png
+      image: /assets/images/content/openAMP_share_image.png
 include: ["_pages"]
 # ----------- THEME / WEBSITE CONFIG ---------------------
 # Blog images/thumbs dir
@@ -106,7 +106,7 @@ google_analytics:
         description: >
           1 minute - Used to throttle request rate.
 # Set the site-wide default social media share image.
-social_media_share_image: /assets/images/social-media-image.png
+social_media_share_image: /assets/images/content/openAMP_share_image.png
 # Set the default favicon
 favicon: /assets/images/favicon.png
 # Site Name - your brand name
