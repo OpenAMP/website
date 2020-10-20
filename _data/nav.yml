@@ -1,19 +1,19 @@
 search:
-    enabled: false
-    label: OpenAMPProject
-universal-nav: false
+  enabled: false
+  label: OpenAMPProject
+universal_nav: false
 brand:
-    text: OpenAMP
-    image:
-      enabled: true
-      svg: true
-      name: openAMPSVG.html
-    url: /
+  text: OpenAMP
+  image:
+    enabled: true
+    svg: true
+    name: openAMPSVG.html
+  url: /
 pages:
-    - title: About
-      url: /about/
-    - title: News & Blogs
-      url: /news/
-    - title: View on GitHub
-      url: https://github.com/OpenAMP
-      external: true
+  - title: About
+    url: /about/
+  - title: News & Blogs
+    url: /news/
+  - title: View on GitHub
+    url: https://github.com/OpenAMP
+    external: true

@@ -8,28 +8,25 @@ social-media-icons: false
 display-contact-details: false
 # These links are displayed at the very bottom of the footer.
 company-links:
-    - name: Legal
-      url: https://www.linaro.org/legal/
-    - name: Contact
-      url: https://www.linaro.org/contact/
-second-column:
-    title: GitHub Projects
-    latest-posts: false
-    # Optionally display another list of items
-    items:
-      - name: open-amp
-        url: https://github.com/OpenAMP/open-amp
-      - name: libmetal
-        url: https://github.com/OpenAMP/libmetal
-      - name: meta-openamp
-        url: https://github.com/OpenAMP/meta-openamp
-      - name: lopper
-        url: https://github.com/devicetree-org/lopper
-# Custom Col on the right
-third-column:
-    title: Useful Links
-    items:
-      - name: OpenAMP call meeting notes
-        url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
-      - name: OpenAMP mailing lists
-        url: https://lists.openampproject.org/mailman/listinfo
+  - name: Legal
+    url: https://www.linaro.org/legal/
+  - name: Contact
+    url: https://www.linaro.org/contact/
+first_column:
+  title: GitHub Projects
+  items:
+    - title: open-amp
+      url: https://github.com/OpenAMP/open-amp
+    - title: libmetal
+      url: https://github.com/OpenAMP/libmetal
+    - title: meta-openamp
+      url: https://github.com/OpenAMP/meta-openamp
+    - title: lopper
+      url: https://github.com/devicetree-org/lopper
+second_column:
+  title: Useful Links
+  items:
+    - title: OpenAMP call meeting notes
+      url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
+    - title: OpenAMP mailing lists
+      url: https://lists.openampproject.org/mailman/listinfo

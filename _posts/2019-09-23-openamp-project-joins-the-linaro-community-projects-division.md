@@ -17,8 +17,9 @@ tags:
   - Arm
   - Open
   - Source
-image: /assets/images/social-media-image.png
+image: /assets/images/content/openAMP_share_image.png
 ---
+
 [San Diego, USA; 23 September 2019] Linaro Community Projects Division, the division of Linaro managing open source community projects with open governance, today announced that the Open Asymmetric Multi-Processing (OpenAMP) project is becoming a Linaro Community Project, joining the already hosted projects Trusted Firmware and devicetree.org. The OpenAMP project aims to standardize interactions between operating environments in a heterogenous embedded system through open source solutions. The founding members of this project include Arm, Kalray, Linaro, Mentor, ST Microelectronics, Wind River and Xilinx. For the most up-to-date list of members, go to [www.openampproject.org](http://www.openampproject.org).
 
 SoCs (system on a chip) are becoming more heterogeneous, with multiple CPU (central processing unit) clusters and special purpose accelerators. As a result, AMP (asymmetric multiprocessor) systems need to be able to run different operating environments side-by-side on the same chip. Until now, however, there has been no standard shared memory scheme for the configuration and interaction between these environments. By creating standards and open source frameworks, the OpenAMP project will simplify the creation of these mixed systems. Becoming a Linaro Community Project will enable a more formal collaborative approach to driving much needed standardization.
@@ -58,6 +59,6 @@ Open Asymmetric Multi-Processing (OpenAMP) is a framework providing the software
 
 **About Linaro Community Projects**
 
-Linaro Community Projects Division is the division of Linaro managing open source community projects with open governance. Linaro is leading collaboration on open source development in the Arm ecosystem. The company has over 250 engineers working on consolidating and optimizing open source software for the Arm architecture, including developer tools, the Linux kernel, Arm power management, and other software infrastructure. Linaro is distribution neutral: it wants to provide the best software foundations to everyone by working upstream, and to reduce non-differentiating and costly low-level fragmentation. The effectiveness of the Linaro approach has been demonstrated by Linaro consistently being listed as one of the top ten company contributors, worldwide, to Linux kernels since 3.10. To ensure commercial quality software, Linaro’s work includes comprehensive test and validation on member hardware platforms. 
+Linaro Community Projects Division is the division of Linaro managing open source community projects with open governance. Linaro is leading collaboration on open source development in the Arm ecosystem. The company has over 250 engineers working on consolidating and optimizing open source software for the Arm architecture, including developer tools, the Linux kernel, Arm power management, and other software infrastructure. Linaro is distribution neutral: it wants to provide the best software foundations to everyone by working upstream, and to reduce non-differentiating and costly low-level fragmentation. The effectiveness of the Linaro approach has been demonstrated by Linaro consistently being listed as one of the top ten company contributors, worldwide, to Linux kernels since 3.10. To ensure commercial quality software, Linaro’s work includes comprehensive test and validation on member hardware platforms.
 
 The full scope of Linaro engineering work is open to all online. To find out more, please visit [http://www.linaro.org](http://www.linaro.org) and [http://www.96Boards.org](http://www.96Boards.org).

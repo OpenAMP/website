@@ -1,5 +1,5 @@
 ---
-layout: jumbotron-container
+layout: flow
 title: Governance
 permalink: /governance/
 description: |-
@@ -7,43 +7,46 @@ description: |-
 
   Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
 jumbotron:
-    triangle-divider: true
-    title: Governance
-    description: >
-        As the OpenAMP Project governance gets defined, it will be documented here.
-        Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
-    background-image: /assets/images/content/triangle_background.svg
+  title: Governance
+  class: openamp_bg overlay flex-column expandable_jumbotron background-image
+  description: >
+    As the OpenAMP Project governance gets defined, it will be documented here.
+    Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
+  image: /assets/images/content/triangle_background.png
 ---
+
 # Introduction
 
 As the OpenAMP Project governance gets defined, it will be documented here.
 Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
 
 # Strategic and Technical Direction
+
 ## Board
 
-The OpenAMP Project board consists of a representative from each of the member companies.  For more details regarding the Board, please refer to the [Project Charter][Project Charter].
+The OpenAMP Project board consists of a representative from each of the member companies. For more details regarding the Board, please refer to the [Project Charter][project charter].
 
 ## Technical Steering Committee
 
-The Technical Steering Committee (TSC) calls are open to all.  Items requiring a vote are voted upon by a representative from each of the member companies.  To be notified of TSC calls, please subscribe to the TSC mailing list [via the OpenAMP Project mailing lists page][OpenAMP mailing lists page].
+The Technical Steering Committee (TSC) calls are open to all. Items requiring a vote are voted upon by a representative from each of the member companies. To be notified of TSC calls, please subscribe to the TSC mailing list [via the OpenAMP Project mailing lists page][openamp mailing lists page].
 
-For more details regarding the TSC, please refer to the [Project Charter][Project Charter].
+For more details regarding the TSC, please refer to the [Project Charter][project charter].
 
 ## Working Groups
 
 The OpenAMP Working Groups are currently:
-* OpenAMP Remoteproc (a.k.a. OpenAMP classic)
-* System Device Tree
-* Application Services
 
-To be notified of working group calls, please subscribe to the corresponding working group mailing list [via the OpenAMP Project mailing lists page][OpenAMP mailing lists page].
+- OpenAMP Remoteproc (a.k.a. OpenAMP classic)
+- System Device Tree
+- Application Services
+
+To be notified of working group calls, please subscribe to the corresponding working group mailing list [via the OpenAMP Project mailing lists page][openamp mailing lists page].
 
 # Membership
 
 It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee. Community participation is welcome!
 
-Governance of the community project is overseen by a board of representatives from Member companies. Member fees support administration for the project, such as the project website and mailing lists. Details can be found in the [Project Charter][Project Charter].
+Governance of the community project is overseen by a board of representatives from Member companies. Member fees support administration for the project, such as the project website and mailing lists. Details can be found in the [Project Charter][project charter].
 
 To get more information about membership, contact [enquiries@openampproject.org](mailto:enquiries@openampproject.org "Enquiries email")
 
@@ -53,30 +56,31 @@ To be discussed at October 2020 TSC call.
 
 # Code of Conduct
 
-The OpenAMP Board is in the process of working on a modified version of the CHAOSS code of conduct.  That will need to be voted upon to be adopted.
+The OpenAMP Board is in the process of working on a modified version of the CHAOSS code of conduct. That will need to be voted upon to be adopted.
 
-We are looking for a couple volunteers to be part of the Code of Conduct Committee.  Please contact [the board](mailto:board@lists.openampproject.org "E-mail OpenAMP Board") if you are interested.
+We are looking for a couple volunteers to be part of the Code of Conduct Committee. Please contact [the board](mailto:board@lists.openampproject.org "E-mail OpenAMP Board") if you are interested.
 
 # Development Process
 
 ## Maintainers
 
-Maintainers are nominated and voted upon by the TSC.  They should be the only ones who can commit to the repositories.  As with everyone else, they must use Pull Requests.
+Maintainers are nominated and voted upon by the TSC. They should be the only ones who can commit to the repositories. As with everyone else, they must use Pull Requests.
 
-[Arnaud Pouliquen][Arnaud Github] and [Ed Mooring][Ed Github] are the maintainers of [libmetal][libmetal Github] and lib [open-amp][open-amp Github]. (2020-02-20)
+[Arnaud Pouliquen][arnaud github] and [Ed Mooring][ed github] are the maintainers of [libmetal][libmetal github] and lib [open-amp][open-amp github]. (2020-02-20)
 
 ## Coding Standards
 
 ### Coding Style
 
-OpenAMP uses the [Zephyr coding style][Zephyr coding style] and uses the checkpatch.pl script to automatically review and leave comments on pull requests (continuous integration process). (2020-02-20)
+OpenAMP uses the [Zephyr coding style][zephyr coding style] and uses the checkpatch.pl script to automatically review and leave comments on pull requests (continuous integration process). (2020-02-20)
 
 ### MISRA C
-(2020-04-17) There was some interest in making the code easier to certify, but no firm decision to proceed.  Recommendation is to watch what Zephyr and Xen do, then revisit the question.
+
+(2020-04-17) There was some interest in making the code easier to certify, but no firm decision to proceed. Recommendation is to watch what Zephyr and Xen do, then revisit the question.
 
 ### C Version
 
-To be discussed.  C11?
+To be discussed. C11?
 
 ## Development Workflow
 
@@ -104,7 +108,7 @@ TO DO: Add guidelines once they get baked
 
 ### Documentation
 
-Sphinx was proposed and is under consideration (2020-05-12) 
+Sphinx was proposed and is under consideration (2020-05-12)
 
 Topic to be revisited.
 
@@ -170,7 +174,7 @@ See [https://wiki.yoctoproject.org/wiki/Stable_branch_maintenance](https://wiki.
 
 The scope of the OpenAMP API lifecycle policy is mostly the libraries and supporting code owned by the project. Today that is primarily the open-amp and libmetal libraries but we expect that to expand in the future.
 
-Specifically out of scope would be the APIs internal to the Linux kernel.  The Linux kernel has a famous "no stable api" policy. Probably also out of scope would be the kernel / user interface.  This interface has a more stringent "don't break the user interface policy" than will be described here.
+Specifically out of scope would be the APIs internal to the Linux kernel. The Linux kernel has a famous "no stable api" policy. Probably also out of scope would be the kernel / user interface. This interface has a more stringent "don't break the user interface policy" than will be described here.
 
 #### Adding New APIs
 
@@ -182,11 +186,11 @@ If an API is to be removed, it must remain in a deprecated state for 2 year (4 r
 
 #### Kernel vs. Library Compatibility
 
-The kernel and library implementations of OpenAMP must be interoperable at all times. Extensions on either side must be  downward compatible.
+The kernel and library implementations of OpenAMP must be interoperable at all times. Extensions on either side must be downward compatible.
 
 ### Wire Protocol Stability
 
-The wire protocol describes the interactions of two independent CPUs in an AMP system.  The bar for maintaining compatibility at this level is much higher.
+The wire protocol describes the interactions of two independent CPUs in an AMP system. The bar for maintaining compatibility at this level is much higher.
 
 This is being discussed on the TSC mailing list in the [thread "API and Wire protocol stability"](https://lists.openampproject.org/pipermail/tsc/2020-May/000062.html).
 
@@ -200,10 +204,10 @@ TBD
 
 TBD
 
-[OpenAMP mailing lists page]: http://lists.openampproject.org
-[Project Charter]: ../docs/OpenAMPProject_Charter_Approved2020Mar06BoardMeeting.pdf
-[Arnaud Github]: https://github.com/arnopo
-[Ed Github]: https://github.com/edmooring
-[libmetal Github]: https://github.com/OpenAMP/libmetal
-[open-amp Github]: https://github.com/OpenAMP/open-amp
-[Zephyr coding style]: https://docs.zephyrproject.org/latest/contribute/index.html#coding-style
+[openamp mailing lists page]: http://lists.openampproject.org
+[project charter]: ../docs/OpenAMPProject_Charter_Approved2020Mar06BoardMeeting.pdf
+[arnaud github]: https://github.com/arnopo
+[ed github]: https://github.com/edmooring
+[libmetal github]: https://github.com/OpenAMP/libmetal
+[open-amp github]: https://github.com/OpenAMP/open-amp
+[zephyr coding style]: https://docs.zephyrproject.org/latest/contribute/index.html#coding-style
