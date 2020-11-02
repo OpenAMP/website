@@ -14,26 +14,25 @@ To make it easier to contribute to the content, Linaro provides a couple of Dock
 
 To build the site:
 
-```
+```bash
 cd <git repository directory>
 ./build-site.sh
 ```
 
 To build the site and then serve it so that you can check your contribution appears:
 
-```
+```bash
 cd <git repository directory>
 JEKYLL_ACTION=serve ./build-site.sh
 ```
 
 To check that your contribution doesn't include any broken links:
 
-```
-
+```bash
 cd <built web site directory>
 ../check-links.sh
 ```
 
-The built web site directory will be `staging.openampproject.org` unless you set `JEKYLLENV=production` before building the site, in which case the directory will be `production.openampproject.org`.
+The built web site directory will be `production.openampproject.org`.
 
 For more information, please see the [build container wiki](https://github.com/linaro-its/jekyll-build-container/wiki) and the [link checker wiki](https://github.com/linaro-its/jekyll-link-checker/wiki).
