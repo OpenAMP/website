@@ -7,3 +7,4 @@ production.openampproject.org
 Gemfile.lock
 assets/resized
 .jekyll-cache
+.asset_pipeline
