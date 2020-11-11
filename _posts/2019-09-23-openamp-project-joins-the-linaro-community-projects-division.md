@@ -10,8 +10,7 @@ description: >-
   Grand, in Bangkok, Thailand 1-5 April 2019, will be industry leaders invited
   to share their insights into different segments and topics relating to the Arm
   ecosystem.
-categories:
-  - News
+category: news
 tags:
   - Linaro
   - Arm
