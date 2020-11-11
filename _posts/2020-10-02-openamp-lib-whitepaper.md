@@ -5,8 +5,7 @@ layout: post
 date: 2020-10-02 01:00:00
 description: >-
   Etsam Anjum and Jeff Hancock have written an OpenAMP white paper.  It introduces the project and working groups, then dives into the OpenAMP library.
-categories:
-  - News
+category: news
 tags:
   - OpenAMP
   - Library

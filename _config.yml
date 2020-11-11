@@ -5,7 +5,7 @@ description: |-
   OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
 destination: _site
 permalink: /:categories/:title/
-theme: jumbo-jekyll-theme
+theme: linaro-jekyll-theme
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -57,6 +57,7 @@ defaults:
     values:
       layout: post
       is_post: true
+      tags_enabled: true
       comments: false
       image: /assets/images/content/openAMP_share_image.png
       strap_image: /assets/images/content/strap_image.png
@@ -141,7 +142,8 @@ edit-on-github:
   repo: https://www.github.com/OpenAMP/website
 # Shema.org settings used in the schema.html include.
 schema:
-  "@type": "Organisation"
+  "@context": "http://schema.org"
+  "@type": "Organization"
   "name": "Open AMP Project"
   "url": "https://www.openampproject.org"
   "logo": "https://www.openampproject.org/assets/images/content/openAMP_LOGOMARKX.png"
@@ -150,9 +152,7 @@ schema:
     "telephone": "01223 400060"
     "contactType": "customer service"
     "availableLanguage": "en"
-  "sameAs":
-    - "https://github.com/OpenAMP"
-    - "https://www.openampproject.org"
+  "sameAs": "https://www.openampproject.org"
 # FESS search label
 search_label: Linaro
 # ----------- JEKYLL PLUGINS ---------------------

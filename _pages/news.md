@@ -3,6 +3,7 @@ title: News
 permalink: /news/
 description: >
   Find the latest Open AMP Project news here.
+tags_enabled: true
 flow:
   - row: container_row
     sections:
@@ -14,5 +15,5 @@ flow:
       #     category: News
       - format: custom_include
         source: blog/display_latest_posts.html
-        category: News
+        category: news
 ---
