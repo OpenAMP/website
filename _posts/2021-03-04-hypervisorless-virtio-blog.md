@@ -21,4 +21,4 @@ Summary:
 Hypervisor-less virtio can complement and enhance the OpenAMP RPMsg framework by providing communication and resource sharing between a rich execution environment like Linux, running the Physical Machine Monitor (PMM) software and acting as the OpenAMP master, and an application specific real-time or safety island deployed on the remote processor.
 By eliminating the hypervisor, a “lateral” communication framework like hypervisor-less virtio enables role assignments (similar to OpenAMP master and remote) based on application requirements and the ability of each of the runtimes to support the PMM.
 
-You can download the PDF of the blog post [here](docs/blogs/HypervisorlessVirtioBlog_Feb2021.pdf).
+You can download the PDF of the blog post [here](/docs/blogs/HypervisorlessVirtioBlog_Feb2021.pdf).
