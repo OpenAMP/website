@@ -10,8 +10,7 @@ tags:
   - OpenAMP
   - Virtio
   - Blog
-  - Open
-  - Source
+  - Open Source
 image: /assets/images/content/openAMP_share_image.png
 ---
 
