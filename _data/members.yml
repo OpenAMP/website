@@ -41,7 +41,7 @@ items:
     url: https://www.ti.com/
   - name: Wind River Logo
     image:
-      path: /assets/images/members/WindRiver.png
+      path: /assets/images/members/RGB-WNDRVR-Logo-Black-Teal.png
       alt: Wind River Logo
     url: https://www.windriver.com/
   - name: Xilinx Logo
