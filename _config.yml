@@ -120,18 +120,12 @@ avatar_placeholder: /assets/images/avatar-placeholder.jpg
 post_placeholder: /assets/images/content/linaro-logo.png
 # Social Media Links
 social_media_channels:
-  github:
-    url: https://github.com/Linaro
-  linkedin:
-    url: https://www.linkedin.com/company/1026961
-  facebook:
-    url: http://facebook.com/LinaroOrg
-  youtube:
-    url: https://www.youtube.com/linaroorg
-  twitter:
-    url: https://twitter.com/linaroorg
-  instagram:
-    url: https://instagram.com/linaroorg
+  github: false
+  linkedin: false
+  facebook: false
+  youtube: false
+  twitter: false
+  instagram: false
 # Disqus Comments Setup
 disqus:
   enabled: false
