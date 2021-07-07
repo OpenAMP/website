@@ -11,13 +11,11 @@ jumbotron:
   class: openamp_bg overlay flex-column expandable_jumbotron background-image
   description: >
     As the OpenAMP Project governance gets defined, it will be documented here.
-    Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
   image: /assets/images/content/triangle_background.png
 ---
 
 # Introduction
 
-As the OpenAMP Project governance gets defined, it will be documented here.
 Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
 
 # Strategic and Technical Direction
