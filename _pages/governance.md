@@ -42,6 +42,8 @@ The OpenAMP Working Groups are currently:
 
 To be notified of working group calls, please subscribe to the corresponding working group mailing list [via the OpenAMP Project mailing lists page][openamp mailing lists page].
 
+To review past meeting notes of the working groups, please visit the [Meeting notes page][openamp meeting notes page].
+
 # Membership
 
 It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee. Community participation is welcome!
@@ -52,7 +54,7 @@ To get more information about membership, contact [enquiries@openampproject.org]
 
 # Consensus and Conflict Resolution
 
-To be discussed at October 2020 TSC call.
+Initial discussion at [October 2020 TSC call](https://github.com/OpenAMP/open-amp/wiki/TSC-Meeting-Notes-2020#20201009).
 
 # Code of Conduct
 
@@ -205,6 +207,7 @@ TBD
 TBD
 
 [openamp mailing lists page]: http://lists.openampproject.org
+[openamp meeting notes page]: https://github.com/OpenAMP/open-amp/wiki/Meeting-Notes
 [project charter]: ../docs/OpenAMPProject_Charter_Approved2020Mar06BoardMeeting.pdf
 [arnaud github]: https://github.com/arnopo
 [ed github]: https://github.com/edmooring
