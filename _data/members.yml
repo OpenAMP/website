@@ -14,11 +14,11 @@ items:
       path: /assets/images/members/linaro-logo.png
       alt: Linaro Logo
     url: https://www.linaro.org/
-  - name: Mentor Logo
+  - name: Siemens
     image:
-      path: /assets/images/members/Mentor-ASB.png
-      alt: Mentor Logo
-    url: https://www.mentor.com/
+      path: /assets/images/members/sie-logo-petrol-rgb.png
+      alt: Siemens Logo
+    url: https://eda.sw.siemens.com/
   - name: Nordic Logo
     image:
       path: /assets/images/members/Nordic_RGB_Horiz.jpg
