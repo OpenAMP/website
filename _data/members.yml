@@ -18,7 +18,7 @@ items:
     image:
       path: /assets/images/members/sie-logo-petrol-rgb.png
       alt: Siemens Logo
-    url: https://eda.sw.siemens.com/
+    url: http://www.siemens.com/embedded/
   - name: Nordic Logo
     image:
       path: /assets/images/members/Nordic_RGB_Horiz.jpg
