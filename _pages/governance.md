@@ -56,9 +56,7 @@ Initial discussion at [October 2020 TSC call](https://github.com/OpenAMP/open-am
 
 # Code of Conduct
 
-The OpenAMP Board is in the process of working on a modified version of the CHAOSS code of conduct. That will need to be voted upon to be adopted.
-
-We are looking for a couple volunteers to be part of the Code of Conduct Committee. Please contact [the board](mailto:board@lists.openampproject.org "E-mail OpenAMP Board") if you are interested.
+Published at the OpenAMP [code of conduct][code of conduct] page.
 
 # Development Process
 
@@ -212,3 +210,4 @@ TBD
 [libmetal github]: https://github.com/OpenAMP/libmetal
 [open-amp github]: https://github.com/OpenAMP/open-amp
 [zephyr coding style]: https://docs.zephyrproject.org/latest/contribute/index.html#coding-style
+[code of conduct]: https://www.openampproject.org/conduct
