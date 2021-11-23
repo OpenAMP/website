@@ -33,3 +33,5 @@ second_column:
       url: https://lists.openampproject.org/mailman/listinfo
     - title: OpenAMP project governance
       url: /governance/
+    - title: OpenAMP code of conduct
+      url: /conduct/
