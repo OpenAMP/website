@@ -42,7 +42,7 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 
 # Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the OpenAMP Code of Conduct Team at openamp-coc@lists.openampproject.org. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The conduct team will make every effort to hear and understand all parties in the dispute. The conduct team is obligated to maintain confidentiality with regard to the reporter of an incident. Confidentiality of the person in violation and the nature of the violation will be maintained until action is agreed to. Further details of specific enforcement policies may be posted separately.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the OpenAMP Code of Conduct Team at [openamp-coc@lists.openampproject.org](mailto:openamp-coc@lists.openampproject.org). All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The conduct team will make every effort to hear and understand all parties in the dispute. The conduct team is obligated to maintain confidentiality with regard to the reporter of an incident. Confidentiality of the person in violation and the nature of the violation will be maintained until action is agreed to. Further details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
@@ -54,30 +54,34 @@ The OpenAMP Code of Conduct Team will report on a yearly basis the number of inc
 
 # Who to Contact
 
-The following people comprise the OpenAMP Code of Conduct Team and are the only recipients of openamp-coc@lists.openampproject.org:
+The following people comprise the OpenAMP Code of Conduct Team and are the only recipients of [openamp-coc@lists.openampproject.org](mailto:openamp-coc@lists.openampproject.org):
 * Tomas Evensen
 * Bill Mills
 * Jeffrey Hancock
 
 # Attribution
-This code is based on the CHAOSS Community Code of Conduct v1.2 available at https://chaoss.community/about/code-of-conduct/
+This code is based on the CHAOSS Community Code of Conduct v1.2 available at [https://chaoss.community/about/code-of-conduct/](https://chaoss.community/about/code-of-conduct/)
 
-The CHAOSS code is adapted from from the Contributor Covenant, version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html and the Geek Feminism Code of Conduct, available at https://geekfeminism.org/about/code-of-conduct/
+The CHAOSS code is adapted from from the Contributor Covenant, version 1.4, available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html) and the Geek Feminism Code of Conduct, available at [https://geekfeminism.org/about/code-of-conduct/](https://geekfeminism.org/about/code-of-conduct/)
 
 # Version History
+
 ## v1.0
 * Add names based on TSC meeting, 2021-10-23
+
 ## v0.9: Policy Changes and Clarifications, 2021-01-29
 * Clarified that it is the Conduct Team that maintains the required confidentiality
 * Clarified that the Conduct Team will attempt to hear and understand all parties in the dispute
 * Require confidentiality for the person in violation until the Conduct Team decides to take action
 * Clarified that actions are taken only after the Conduct Team has discussed and voted on the incident and action.
 * Stated that the person in violation be informed of all actions taken
+
 ## v0.8: Changes to adapt to OpenAMP
 * Change CHAOSS references OpenAMP
 * Change email list name
 * Change team members to place holders for now
 * Updated Attribution
 * Updated this Version History
+
 ## V0.0
 * Import CHAOSS CoC v1.2
