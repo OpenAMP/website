@@ -4,11 +4,6 @@ items:
       path: /assets/images/members/arm.jpg
       alt: Arm Logo
     url: https://www.arm.com/
-  - name: Kalray
-    image:
-      path: /assets/images/members/kalray.jpg
-      alt: Kalray Logo
-    url: https://www.kalrayinc.com/
   - name: Linaro Logo
     image:
       path: /assets/images/members/linaro-logo.png
