@@ -210,4 +210,4 @@ TBD
 [libmetal github]: https://github.com/OpenAMP/libmetal
 [open-amp github]: https://github.com/OpenAMP/open-amp
 [zephyr coding style]: https://docs.zephyrproject.org/latest/contribute/index.html#coding-style
-[code of conduct]: https://www.openampproject.org/conduct
+[code of conduct]: https://www.openampproject.org/
