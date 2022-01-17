@@ -190,7 +190,7 @@ The kernel and library implementations of OpenAMP must be interoperable at all t
 
 The wire protocol describes the interactions of two independent CPUs in an AMP system. The bar for maintaining compatibility at this level is much higher.
 
-This is being discussed on the TSC mailing list in the [thread "API and Wire protocol stability"](https://lists.openampproject.org/pipermail/tsc/2020-May/000062.html).
+This is being discussed on the TSC mailing list in the [thread "API and Wire protocol stability"](https://lists.openampproject.org/archives/list/tsc@lists.openampproject.org/thread/6PEWEBRDTEX6GOMFF5YOO7YRMX5T5SCD/).
 
 ## Certification Concerns
 

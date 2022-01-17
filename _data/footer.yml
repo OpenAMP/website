@@ -30,7 +30,7 @@ second_column:
     - title: OpenAMP call meeting notes
       url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
     - title: OpenAMP mailing lists
-      url: https://lists.openampproject.org/mailman/listinfo
+      url: https://lists.openampproject.org/mailman3/lists/?all-lists
     - title: OpenAMP project governance
       url: /governance/
     - title: OpenAMP code of conduct
