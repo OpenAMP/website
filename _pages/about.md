@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 description: >
   OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
+  [This presentation](/docs/presentations/OpenAMP-Elevator-Pitch-2022-Q1.pdf "OpenAMP elevator pitch slides PDF") describes OpenAMP in a nutshell.
 jumbotron:
   title: About
   inner_class: text-center
