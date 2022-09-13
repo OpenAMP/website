@@ -14,6 +14,8 @@ tags:
   - App-services
 image: /assets/images/content/openAMP_share_image.png
 ---
+Dan Milea from Wind River presented at Zephyr Developer Summit 2022 about "Hypervisor-less Virtio: Assembling Multi-OS Systems Using Standards-based Protocols for Intra-SoC Connectivity and Device Sharing".
+
 Abstract:
 Edge computing applications can now span across multi-core CPU clusters and run-times and can include safety or real-time workloads which run on dedicated CPU cores. The connectivity between these collaborative run-times can be provided by standards-based protocols like virtio. Virtio can be used for communication between a guest and a hypervisor, but also to communicate laterally between runtimes deployed on a multicore CPU SoC. We label this type of communication hypervisor-less virtio. Adding virtio support to Zephyr enables the creation of efficient multi-core / multi-run-time applications. Building on top of standard virtio, hypervisor-less virtio can provide communication and resource sharing between a rich execution environment like Linux and a Zephyr-based application running on a dedicated hardware island.
 
