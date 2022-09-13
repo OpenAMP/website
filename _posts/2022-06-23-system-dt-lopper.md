@@ -1,5 +1,5 @@
 ---
-title: Watch Embedded Linux Conference 2022 presentation on System Device Tree
+title: Watch Embedded Linux Conference 2022 presentation on System Device Tree and Lopper
 author: openamp
 layout: post
 date: 2022-06-23 01:00:00
