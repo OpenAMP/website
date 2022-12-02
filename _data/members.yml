@@ -9,11 +9,6 @@ items:
       path: /assets/images/members/linaro-logo.png
       alt: Linaro Logo
     url: https://www.linaro.org/
-  - name: Siemens
-    image:
-      path: /assets/images/members/sie-logo-petrol-rgb.png
-      alt: Siemens Logo
-    url: http://www.siemens.com/embedded/
   - name: Nordic Logo
     image:
       path: /assets/images/members/Nordic_RGB_Horiz.jpg
@@ -24,9 +19,14 @@ items:
       path: /assets/images/members/nxp.jpg
       alt: NXP Logo
     url: https://www.nxp.com/
+  - name: Siemens
+    image:
+      path: /assets/images/members/sie-logo-petrol-rgb.png
+      alt: Siemens Logo
+    url: http://www.siemens.com/embedded/
   - name: ST Logo
     image:
-      path: /assets/images/members/ST.jpg
+      path: /assets/images/members/logo-ST-2022.png
       alt: ST Logo
     url: https://www.st.com/
   - name: TI Logo
@@ -41,6 +41,6 @@ items:
     url: https://www.windriver.com/
   - name: Xilinx Logo
     image:
-      path: /assets/images/members/xilinx.png
+      path: /assets/images/members/AMD_Xilinx.png
       alt: Xilinx Logo
     url: https://www.xilinx.com/
