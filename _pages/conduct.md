@@ -60,7 +60,7 @@ The following people comprise the OpenAMP Code of Conduct Team and are the only 
 * Jeffrey Hancock
 
 # Attribution
-This code is based on the CHAOSS Community Code of Conduct v1.2 available at [https://chaoss.community/about-2/code-of-conduct/](https://chaoss.community/about-2/code-of-conduct/)
+This code is based on the CHAOSS Community Code of Conduct v1.2 available at [https://chaoss.community/code-of-conduct/](https://chaoss.community/code-of-conduct/)
 
 The CHAOSS code is adapted from from the Contributor Covenant, version 1.4, available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html) and the Geek Feminism Code of Conduct, available at [https://geekfeminism.org/about/code-of-conduct/](https://geekfeminism.org/about/code-of-conduct/)
 
