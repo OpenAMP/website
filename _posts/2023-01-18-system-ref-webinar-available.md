@@ -36,5 +36,5 @@ Speakers and Panelists:
 * Tammy Leino, Software Engineer, Siemens
 
 
-The Linaro resource page with the video of the presentation and the slides can be found [here](https://resources.linaro.org/en/resource/2QSzYLK9Uxq4CFhVBYAnvb).
+The video of the presentation and the slides can be found [at this Linaro resource page](https://resources.linaro.org/en/resource/2QSzYLK9Uxq4CFhVBYAnvb).
 In the posted slides are links to the documentation and repositories for reproducing the demos, as well as a link to join the OpenAMP community Discord channel.
