@@ -36,7 +36,7 @@ The OpenAMP Working Groups are currently:
 
 - OpenAMP Remoteproc (a.k.a. OpenAMP classic)
 - System Device Tree
-- Application Services
+- System reference
 
 To be notified of working group calls, please subscribe to the corresponding working group mailing list [via the OpenAMP Project mailing lists page][openamp mailing lists page].
 
@@ -60,6 +60,12 @@ Published at the OpenAMP [code of conduct][code of conduct] page.
 
 # Development Process
 
+The development process in this section applies to the libmetal and open-amp libraries and any RTOS code in openamp-system-reference.
+
+The pull request model applies to all OpenAMP repositories, except from the kernel-staging repository.
+
+The kernel staging repository accepts only pull request from OpenAMP maintainers. Patches for the kernel should be sent to the [linux-remoteproc@vger.kernel.org](mailto:linux-remoteproc@vger.kernel.org) mailing list.
+
 ## Maintainers
 
 Maintainers are nominated and voted upon by the TSC. They should be the only ones who can commit to the repositories. As with everyone else, they must use Pull Requests.
@@ -70,7 +76,7 @@ Maintainers are nominated and voted upon by the TSC. They should be the only one
 
 ### Coding Style
 
-OpenAMP uses the [Zephyr coding style][zephyr coding style] and uses the checkpatch.pl script to automatically review and leave comments on pull requests (continuous integration process). (2020-02-20)
+New OpenAMP code should follow the [Zephyr coding style][zephyr coding style] and uses the checkpatch.pl script to automatically review and leave comments on pull requests (continuous integration process). (2020-02-20)
 
 ### MISRA C
 
@@ -78,7 +84,7 @@ OpenAMP uses the [Zephyr coding style][zephyr coding style] and uses the checkpa
 
 ### C Version
 
-To be discussed. C11?
+To be discussed. C99?
 
 ## Development Workflow
 
@@ -98,7 +104,7 @@ Proposed new features should be discussed actively on the mailing list and the t
 
 ### Testing
 
-For a new feature, an application or test must be provided so that we can test that the feature works & continues to be valid in the future.
+For a new feature: an application or test must be provided so that we can test that the feature works & continues to be valid in the future.
 
 OpenAMP CI is relying on the checkpatch tool, using Zephyr coding rules.
 
@@ -106,19 +112,18 @@ TO DO: Add guidelines once they get baked
 
 ### Documentation
 
-Sphinx was proposed and is under consideration (2020-05-12)
-
-Topic to be revisited.
+Sphinx and Doxygen are used.
+The Documentation has to be be updated for any new feature or API update.
 
 ## Branching and Tagging Strategy
 
-### Development on master
+### Development on main
 
-The master branch is where all accepted changes are first committed. The CI loop is primarily focused on this branch.
+The main branch is where all accepted changes are first committed. The CI loop is primarily focused on this branch.
 
 ### Release branches
 
-A release branch is created from the master branch at the time of feature freeze for the release.
+A release branch is created from the main branch at the time of feature freeze for the release.
 
 ### Release Tags
 
@@ -128,11 +133,11 @@ At the time of the release, the release branch will be tagged. This will help en
 
 ### Release Frequency
 
-Releases will be twice yearly, in the spring and fall (usually mid-April and mid-October).
+Releases will be twice yearly, in the spring and fall (usually end of April and end of October).
 
 ### Naming Conventions
 
-Releases will be named yyyy.mm (e.g. 2019.10).
+Releases will be named yyyy.mm.n (e.g. 2019.10.0).
 
 ### Release Process
 
@@ -144,14 +149,16 @@ This is for discussion and development of new features. It starts as soon as the
 
 #### Feature Freeze
 
-This occurs at about the four-month mark in the release cycle. The release branch is created from the master at this point.
+This occurs at about the five-month mark in the release cycle. The release branch is created from the main at this point.
 
 #### Debug
 
-After Feature Freeze, no new features can be committed to the release branch, only bug fixes.
+This occurs at about the five-month mark in the release cycle
+After Feature Freeze, no new features are committed until the release, only bug fixes.
 
 #### Code Freeze
 
+This occurs at about fifteen days before the release
 At this time, no further commits may be made to the release branch unless they fix a critical bug found in testing.
 
 #### Release
@@ -176,7 +183,8 @@ Specifically out of scope would be the APIs internal to the Linux kernel. The Li
 
 #### Adding New APIs
 
-TBD
+A new API shall not break the existing one. In such case the deprecating
+APIs process described below shall be applied.
 
 #### Deprecating Existing APIs
 
@@ -194,13 +202,9 @@ This is being discussed on the TSC mailing list in the [thread "API and Wire pro
 
 ## Certification Concerns
 
-### Safety
+### Security and Safety
 
-TBD
-
-### Security
-
-TBD
+We expect OpenAMP libraries will be used in security and safety sensitive areas. OpenAMP will align to reasonable requirements as they become clear.
 
 [openamp mailing lists page]: http://lists.openampproject.org
 [openamp meeting notes page]: https://github.com/OpenAMP/open-amp/wiki/Meeting-Notes
