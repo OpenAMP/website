@@ -123,7 +123,7 @@ The main branch is where all accepted changes are first committed. The CI loop i
 
 ### Release branches
 
-A release branch is created from the main branch at the time of feature freeze for the release.
+A release branch is created from the main branch on the release, for maintenance.
 
 ### Release Tags
 
@@ -183,8 +183,7 @@ Specifically out of scope would be the APIs internal to the Linux kernel. The Li
 
 #### Adding New APIs
 
-A new API shall not break the existing one. In such case the deprecating
-APIs process described below shall be applied.
+An update of the API shall not break the existing one. When possible a new API should be created instead of updating the existing one, else the deprecating APIs process described below shall be applied.
 
 #### Deprecating Existing APIs
 
