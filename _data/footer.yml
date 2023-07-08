@@ -4,7 +4,7 @@ copyright_text: Linaro
 footer_brand:
   logo: /assets/images/Linaro-logo-white.png
 # Social Media Icons Row
-social-media-icons: false
+social-media-icons: true
 # Display the contact details section
 display-contact-details: false
 # These links are displayed at the very bottom of the footer.
