@@ -14,23 +14,21 @@ company_links:
   - name: Contact
     url: https://www.linaro.org/contact/
 first_column:
-  title: GitHub Projects
+  title: Getting Started
   items:
-    - title: open-amp
-      url: https://github.com/OpenAMP/open-amp
-    - title: libmetal
-      url: https://github.com/OpenAMP/libmetal
-    - title: meta-openamp
-      url: https://github.com/OpenAMP/meta-openamp
-    - title: lopper
-      url: https://github.com/devicetree-org/lopper
+    - title: OpenAMP Project documentation
+      url: https://openamp.readthedocs.io/en/latest/index.html
+    - title: Reference samples and demos
+      url: https://openamp.readthedocs.io/en/latest/demos/index.html
+    - title: OpenAMP mailing lists
+      url: https://lists.openampproject.org/mailman3/lists/?all-lists
+    - title: OpenAMP community Discord
+      url: https://discord.gg/8quFQBWq42
 second_column:
   title: Useful Links
   items:
     - title: OpenAMP call meeting notes
       url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
-    - title: OpenAMP mailing lists
-      url: https://lists.openampproject.org/mailman3/lists/?all-lists
     - title: OpenAMP project governance
       url: /governance/
     - title: OpenAMP code of conduct
