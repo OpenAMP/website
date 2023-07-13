@@ -120,10 +120,13 @@ avatar_placeholder: /assets/images/avatar-placeholder.jpg
 post_placeholder: /assets/images/content/linaro-logo.png
 # Social Media Links
 social_media_channels:
-  github: false
-  linkedin: false
+  github:
+    url: https://github.com/OpenAMP
+  linkedin:
+    url: https://www.linkedin.com/company/openamp
   facebook: false
-  youtube: false
+  youtube:
+    url: https://youtube.com/@openamp
   twitter: false
   instagram: false
 # Disqus Comments Setup
