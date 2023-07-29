@@ -19,7 +19,7 @@ This BOF was open to discussions about all things AMP. Many modern SOCs contain 
 
 The presentation consisted of a short introduction and status update, followed by open discussion with the audience. All topics related to this scope were welcome.
 
-Speakers and Panelists:
+Discussion leads:
 * Bill Mills, Principal Technical Consultant, Linaro
 * Arnaud Pouliquen, Design S/W Senior Engineer, STMicroelectronics
 * Tomas Evensen, Senior Fellow Open Source Program Office, AMD Xilinx
