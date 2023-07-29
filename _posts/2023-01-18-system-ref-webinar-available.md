@@ -37,5 +37,5 @@ Speakers and Panelists:
 
 
 The video of the presentation and the slides can be found [at this Linaro resource page](https://resources.linaro.org/en/resource/2QSzYLK9Uxq4CFhVBYAnvb).
-A [YouTube version of the video](https://youtu.be/R_5DOIvo7tI) is also available, with chapter links so you can jump to specific sections easily.
 In the posted slides are links to the documentation and repositories for reproducing the demos, as well as a link to join the OpenAMP community Discord channel.
+A [YouTube version of the video](https://youtu.be/R_5DOIvo7tI) is also available, with chapter links so you can jump to specific sections easily.
