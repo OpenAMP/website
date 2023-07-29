@@ -2,7 +2,7 @@
 title: Check out Resources from AMP BOF at Linaro Connect LHR23
 author: openamp
 layout: post
-date: 2023-01-18 12:00:00
+date: 2023-05-17 23:00:00
 description: >-
   The LHR23 AMP BOF slides and recording are posted to the Linaro resources page.
 category: news
