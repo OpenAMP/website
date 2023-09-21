@@ -5,8 +5,8 @@ const { data } = Astro.props;
 ---
 
 <header
-  class=`bg-center text-center relative text-white flex flex-col items-center justify-center p-12`
-  style=`background-image: url(${heroImage.src})`
+  class=`text-center relative text-white flex flex-col items-center justify-center p-12`
+  style=`background-image: url(${heroImage.src}); background-size: cover`
 >
   <slot />
 </header>

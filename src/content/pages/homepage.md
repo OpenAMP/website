@@ -1,3 +1,5 @@
+---
+
 main_title: Open AMP
 main_body: OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
 text_body_1: SoCs (System on a Chip) are becoming more heterogeneous, with multiple processor clusters and special-purpose accelerators. As a result, AMP (Asymmetric MultiProcessing) systems need to be able to run different operating environments side-by-side on the same chip. Developing a standard shared memory scheme for the configuration and interaction between these environments will simplify working with SoCs.

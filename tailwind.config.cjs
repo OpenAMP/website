@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         secondary: "rgb(87,87,87)",
-        linarogreen: "rgb(152, 204, 51)",
+        openampred: "rgb(220, 74, 74)",
       },
       maxWidth: {
         "1/2": "50%",
