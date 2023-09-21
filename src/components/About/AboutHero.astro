@@ -1,0 +1,9 @@
+---
+import Header from "../Header.astro";
+const { data } = Astro.props;
+---
+
+<Header>
+  <h1 class="text-white">{data.main_title}</h1>
+  <p>{data.main_body}</p>
+</Header>

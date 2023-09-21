@@ -1,0 +1,52 @@
+main_title: About
+main_body: OpenAMP (Open Asymmetric Multi-Processing) seeks to standardize the interactions between operating environments in a heterogeneous embedded system through open source solutions for Asymmetric MultiProcessing (AMP).
+
+members:
+  - name: Arm
+    image:
+      path: /assets/images/members/arm.jpg
+      alt: Arm Logo
+    url: https://www.arm.com/
+  - name: Linaro Logo
+    image:
+      path: /assets/images/members/linaro-logo.png
+      alt: Linaro Logo
+    url: https://www.linaro.org/
+  - name: Nordic Logo
+    image:
+      path: /assets/images/members/Nordic_RGB_Horiz.jpg
+      alt: Nordic Logo
+    url: https://www.nordicsemi.com/
+  - name: NXP Logo
+    image:
+      path: /assets/images/members/nxp.jpg
+      alt: NXP Logo
+    url: https://www.nxp.com/
+  - name: Siemens
+    image:
+      path: /assets/images/members/sie-logo-petrol-rgb.png
+      alt: Siemens Logo
+    url: http://www.siemens.com/embedded/
+  - name: ST Logo
+    image:
+      path: /assets/images/members/logo-ST-2022.png
+      alt: ST Logo
+    url: https://www.st.com/
+  - name: TI Logo
+    image:
+      path: /assets/images/members/texas-instruments.jpg
+      alt: TI Logo
+    url: https://www.ti.com/
+  - name: Wind River Logo
+    image:
+      path: /assets/images/members/RGB-WNDRVR-Logo-Black-Teal.png
+      alt: Wind River Logo
+    url: https://www.windriver.com/
+  - name: Xilinx Logo
+    image:
+      path: /assets/images/members/AMD_Xilinx.png
+      alt: Xilinx Logo
+    url: https://www.xilinx.com/
+
+membership_title: Membership and Participation
+membership_body: "It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee. Community participation is welcome!\nGovernance of the community project is overseen by a board of representatives from Member companies. Member fees support administration for the project, such as the project website and mailing lists. Details of the Governance are in the Project Charter.\nTo get more information about membership, contact enquiries@openampproject.org"

@@ -1,6 +1,6 @@
 ---
 import { getEntry } from "astro:content";
-import Hero from "../components/Home/Hero.astro";
+import AboutHero from "../components/About/AboutHero.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 
 const homepage = await getEntry("pages", "homepage");
@@ -9,6 +9,6 @@ const { data }: any = homepage;
 
 <html lang="en">
   <MainLayout>
-    <Hero data={data} />
+    <AboutHero data={data} />
   </MainLayout>
 </html>
