@@ -1,11 +1,18 @@
 ---
 import heroImage from "../../assets/triangle_background.png";
 import Header from "../Header.astro";
+import { Image } from "astro:assets";
+import logoImage from "../../assets/openAMP_combox_dark.svg";
 
 const { data } = Astro.props;
 console.log(data);
 ---
 
 <Header>
-  <h1>test</h1>
+  <Image class="w-full h-[200px]" src={logoImage} alt="openAMP Logo" />
+
+  <p class="leading-normal text-center w-2/3">{data.main_body}</p>
+  <button class="bg-[#dc4a4a] p-2 rounded text-xs text-center"
+    >View on Github</button
+  >
 </Header>

@@ -1,0 +1,13 @@
+---
+const { data } = Astro.props;
+console.log(data);
+---
+
+<div class="mt-6">
+  <p class="text-lg w-10/12 text-center mx-auto">{data.text_body_1}</p>
+  <p class="text-lg w-10/12 text-center mx-auto">{data.text_body_2}</p>
+  <p class="text-lg w-10/12 text-center mx-auto">
+    <span class="text-[#dc4a4a]">This presentation</span> gives some brief
+    details about OpenAMP.
+  </p>
+</div>
