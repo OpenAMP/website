@@ -4,6 +4,9 @@ import heroImage from "../assets/triangle_background.png";
 const { data } = Astro.props;
 ---
 
-<header >
-  <h1 class="text-white">test</h1>
+<header
+  class=`bg-center text-center relative text-white`
+  style=`background-image: url(${heroImage.src})`
+>
+  <slot />
 </header>
