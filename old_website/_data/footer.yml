@@ -1,0 +1,35 @@
+# Copyright text to be displayed at the very bottom of the footer
+copyright_text: Linaro
+# Set this to false if you do not want the Linaro logo in the footer.
+footer_brand:
+  logo: /assets/images/Linaro-logo-white.png
+# Social Media Icons Row
+social-media-icons: true
+# Display the contact details section
+display-contact-details: false
+# These links are displayed at the very bottom of the footer.
+company_links:
+  - name: Legal
+    url: https://www.linaro.org/legal/
+  - name: Contact
+    url: https://www.linaro.org/contact/
+first_column:
+  title: Getting Started
+  items:
+    - title: OpenAMP Project documentation
+      url: https://openamp.readthedocs.io/en/latest/index.html
+    - title: Reference samples and demos
+      url: https://openamp.readthedocs.io/en/latest/demos/index.html
+    - title: OpenAMP mailing lists
+      url: https://lists.openampproject.org/mailman3/lists/?all-lists
+    - title: OpenAMP community Discord
+      url: https://discord.gg/8quFQBWq42
+second_column:
+  title: Useful Links
+  items:
+    - title: OpenAMP call meeting notes
+      url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes
+    - title: OpenAMP project governance
+      url: /governance/
+    - title: OpenAMP code of conduct
+      url: /conduct/

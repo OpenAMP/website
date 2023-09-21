@@ -2,12 +2,14 @@
 import { getEntry } from "astro:content";
 import Hero from "../components/Home/Hero.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import BaseHead from "../components/BaseHead.astro";
 
 const homepage = await getEntry("pages", "homepage");
 const { data }: any = homepage;
 ---
 
 <html lang="en">
+  <BaseHead />
   <MainLayout>
     <Hero data={data} />
   </MainLayout>
