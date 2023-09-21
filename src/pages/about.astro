@@ -3,14 +3,23 @@ import { getEntry } from "astro:content";
 import AboutHero from "../components/About/AboutHero.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import BaseHead from "../components/BaseHead.astro";
+import Members from "../components/About/Members.astro";
 
-const homepage = await getEntry("pages", "about");
-const { data }: any = homepage;
+const about = await getEntry("pages", "about");
+const { data, render } = about;
+const { Content } = await render();
 ---
 
 <html lang="en">
   <BaseHead />
   <MainLayout>
     <AboutHero data={data} />
+    <Members />
+    <section>
+      <h2 class="mb-8">{data.membership_title}</h2>
+      <div class="text-center text-lg">
+        <Content />
+      </div>
+    </section>
   </MainLayout>
 </html>

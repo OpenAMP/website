@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+const members = await getEntry("members", "members");
+console.log(members);
+---
+
+<section>
+  <h2>Members</h2>
+  <ul class="mx-auto max-w-4xl flex flex-wrap justify-center items-center">
+    {
+      members.data.map((member: any) => (
+        <a class="w-24 md:w-36 m-6" href={member.url} target="_blank">
+          <Image src={member.image} alt={member.alt} />
+        </a>
+      ))
+    }
+  </ul>
+</section>
