@@ -1,0 +1,63 @@
+---
+import { getEntry } from "astro:content";
+import github_icon from "../assets/github.svg";
+import { Image } from "astro:assets";
+import LinaroLogo from "../assets/linaro-logo.png";
+import { Icon } from "astro-icon";
+import linkedin_icon from "../assets/linkedin_icon.svg";
+import youtube_icon from "../assets/youtube.svg";
+
+const footer = await getEntry("pages", "footer");
+const { data, render }: any = footer;
+---
+
+<div>
+  <div
+    class=`flex-wrap text-center text-white flex flex-row justify-center p-4 md:p-12 bg-[#dc4a4a]`
+  >
+    <div>
+      <h2 class="font-semibold">{data.main_title_1}</h2>
+      {
+        data.links_1.map((item: any) => (
+          <div class="pt-4">
+            <a class="text-white no-underline p-4" href={item.url}>
+              {item.label}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <div>
+      <h2 class="font-semibold">{data.main_title_2}</h2>
+      {
+        data.links_2.map((item: any) => (
+          <div class="pt-4">
+            <a class="text-white no-underline p-4" href={item.url}>
+              {item.label}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <div class=`flex flex-col text-white bg-[#575757]`>
+    <div class="flex md:flex-row flex-col items-center justify-center mt-4">
+      <Image class="w-[14px] mr-4" src={github_icon} alt="Github logo" />
+      <!-- <Icon pack="mdi" name="arcticons:github" size='48' /> -->
+      <p class="mr-4 font-medium pt-4">Report an Issue</p>
+      <p class="mr-4 font-medium pt-4">Edit on Gitgub</p>
+    </div>
+    <div class="flex md:flex-row flex-col justify-center p-4 items-center">
+      <p class="mr-2 pt-4">Copyright © 2023 Linaro</p>
+      <p class="mr-2"><span class="font-black text-3xl">.</span>Legal</p>
+      <p class="mr-2"><span class="font-black text-3xl">.</span>Contact</p>
+      <!-- <Icon name="devicon:linkedin" size="48" /> -->
+      <Image class="w-[14px] mr-4" src={linkedin_icon} alt="linkedIn logo" />
+      <Image class="w-[14px] mr-4" src={github_icon} alt="Github logo" />
+      <Image class="w-[14px] mr-4" src={youtube_icon} alt="Youtube logo" />
+    </div>
+    <div class="flex flex-row justify-center">
+      <Image class="w-[80px]" src={LinaroLogo} alt="logo" />
+    </div>
+  </div>
+</div>

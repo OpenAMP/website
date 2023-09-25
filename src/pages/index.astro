@@ -6,13 +6,17 @@ import BaseHead from "../components/BaseHead.astro";
 import HomeContent from "../components/Home/HomeContent.astro";
 
 const homepage = await getEntry("pages", "homepage");
-const { data }: any = homepage;
+const { data, render }: any = homepage;
+const { Content } = await render();
 ---
 
 <html lang="en">
   <BaseHead />
   <MainLayout>
     <Hero data={data} />
-    <HomeContent data={data} />
+    <!-- <HomeContent data={data} /> -->
+    <section class="text-lg text-center decoration-0">
+      <Content />
+    </section>
   </MainLayout>
 </html>
