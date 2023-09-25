@@ -36,7 +36,7 @@ export default function NavLinks({ pages }: { pages: any }) {
         {pages.map((page: any) => (
           <a
             href={page.url}
-            class="uppercase text-xs text-black no-underline p-5"
+            class="uppercase text-xs text-black no-underline p-5 hover:border-b-2 hover:border-[#dc4a4a]"
           >
             {page.label[0].toUpperCase() + page.label.slice(1)}
           </a>

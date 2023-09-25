@@ -1,5 +1,4 @@
 ---
-import heroImage from "../../assets/triangle_background.png";
 import Header from "../Header.astro";
 import { Image } from "astro:assets";
 import logoImage from "../../assets/openAMP_combox_dark.svg";
@@ -12,7 +11,10 @@ console.log(data);
   <Image class="w-full h-[200px]" src={logoImage} alt="openAMP Logo" />
 
   <p class="leading-normal text-center max-w-lg text-lg">{data.main_body}</p>
-  <button class="bg-[#dc4a4a] p-2 rounded text-xs text-center"
-    >View on Github</button
+  <button
+    onclick="
+    window.open('https://github.com/OpenAMP', '_blank')
+    "
+    class="bg-[#dc4a4a] p-2 rounded text-xs text-center">View on Github</button
   >
 </Header>

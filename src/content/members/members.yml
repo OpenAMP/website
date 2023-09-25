@@ -1,5 +1,5 @@
 - name: Arm
-  image: ../../assets/members/arm.jpg
+  image: ../../../assets/members/arm.jpg
   alt: Arm Logo
   url: https://www.arm.com/
 - name: Linaro Logo

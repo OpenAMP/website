@@ -15,8 +15,8 @@ const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split
   class="h-full w-full text-inherit no-underline cursor-pointer"
   href={data.url}
 >
-  <article
-    class="flex opacity-100 flex-col items-center shadow-lg duration-300 hover:shadow-2xl hover:scale-105 rounded-3xl m-4 p-12 h-full"
+  <div
+    class="card h-full opacity-100 flex-col items-center shadow-lg duration-300 hover:drop-shadow-xl hover:scale-105 m-4 p-12"
   >
     <Image class="w-64" src={data.image} alt={data.title} />
     <div class="flex w-full justify-between items-center my-4">
@@ -41,5 +41,5 @@ const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split
         ))
       }
     </ul>
-  </article>
+  </div>
 </a>

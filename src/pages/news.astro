@@ -6,16 +6,23 @@ import NewsItem from "../components/News/NewsItem.astro";
 import FirstItem from "../components/News/FirstItem.astro";
 
 const blogs = await getCollection("blogs");
-console.log(blogs);
+
+const displayBlogs = blogs.pop();
+console.log(displayBlogs);
 ---
 
 <html lang="en">
   <BaseHead />
   <MainLayout>
     <section class="max-w-7xl mx-auto">
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12">
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 mb-4">
         <FirstItem {...blogs[0]} />
-        {blogs.slice(1).map((blog) => <NewsItem {...blog} />)}
+        {
+          blogs
+            .reverse()
+            .slice(1)
+            .map((blog) => <NewsItem {...blog} />)
+        }
       </ul>
     </section>
   </MainLayout>

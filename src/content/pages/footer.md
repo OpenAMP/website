@@ -27,13 +27,7 @@ links_2:
       label: OpenAMP call meeting notes,
       url: https://github.com/OpenAMP/open-amp/wiki#Meeting_Notes,
     },
-    {
-      label: OpenAMP project governance,
-      url: https://www.openampproject.org/governance/,
-    },
-    {
-      label: OpenAMP code of conduct,
-      url: https://www.openampproject.org/conduct/,
-    },
+    { label: OpenAMP project governance, url: /governance/ },
+    { label: OpenAMP code of conduct, url: /conduct/ },
   ]
 ---

@@ -1,0 +1,22 @@
+---
+import { getEntry } from "astro:content";
+import Hero from "../components/Governance/Hero.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import BaseHead from "../components/BaseHead.astro";
+import HomeContent from "../components/Home/HomeContent.astro";
+
+const governance = await getEntry("pages", "governance");
+const { data, render }: any = governance;
+const { Content } = await render();
+---
+
+<html lang="en">
+  <BaseHead />
+  <MainLayout>
+    <Hero data={data} />
+    <!-- <HomeContent data={data} /> -->
+    <section class="text-left decoration-0">
+      <Content />
+    </section>
+  </MainLayout>
+</html>
