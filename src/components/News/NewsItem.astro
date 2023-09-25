@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+const { data, body } = Astro.props;
+import OpenAMPLogo from "../../assets/images/content/openAMP_LOGOMARKX.png";
+import dayjs from "dayjs";
+
+const dateObj = dayjs(data.date);
+const dateString = dateObj.format("dddd, MMMM D, YYYY");
+console.log(typeof body);
+
+const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split by words
+---
+
+<a
+  class="h-full w-full text-inherit no-underline cursor-pointer"
+  href={data.url}
+>
+  <article
+    class="flex opacity-100 flex-col items-center shadow-lg duration-300 hover:shadow-2xl hover:scale-105 rounded-3xl m-4 p-12 h-full"
+  >
+    <Image class="w-64" src={data.image} alt={data.title} />
+    <div class="flex w-full justify-between items-center my-4">
+      <i class="text-xl">OpenAMP</i><Image
+        class="w-12"
+        src={OpenAMPLogo}
+        alt="OpenAMP logo"
+      />
+    </div>
+    <h2 class="text-xl text-left">{data.title}</h2>
+    <p class="text-slate-500 w-full">{dateString}</p>
+    <div
+      class="bg-gray-100 text-gray-700 font-bold text-sm self-start my-2 p-1"
+    >
+      {readTime}
+    </div>
+    <p>{data.description}</p>
+    <ul class="flex flex-wrap gap-2 w-full">
+      {
+        data.tags.map((tag: string) => (
+          <li class="bg-gray-100 p-2 text-sm text-gray-600">{tag}</li>
+        ))
+      }
+    </ul>
+  </article>
+</a>
