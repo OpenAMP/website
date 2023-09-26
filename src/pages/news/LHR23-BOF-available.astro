@@ -1,0 +1,28 @@
+---
+import { getEntry } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Hero from "../../components/Governance/Hero.astro";
+import LHR23 from "../../components/News/LHRHero.astro";
+import LHRHero from "../../components/News/LHRHero.astro";
+import LHRTitle from "../../components/News/LHRTitle.astro";
+
+const blog = await await getEntry("pages", "lhr");
+const { data, render }: any = blog;
+const { Content } = await render();
+
+console.log("blog", data);
+---
+
+<html lang="en">
+  <BaseHead />
+
+  <MainLayout>
+    <Hero data="" />
+    <LHRTitle data={data} />
+    <LHRHero data={data} />
+    <section class="text-left decoration-0">
+      <Content />
+    </section>
+  </MainLayout>
+</html>

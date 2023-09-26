@@ -35,12 +35,17 @@ const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split
       <ul class="flex flex-wrap gap-2 w-full">
         {
           data.tags.map((tag: string) => (
-            <li class="bg-gray-100 p-2 text-sm text-gray-600">{tag}</li>
+            <li class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5]">
+              {tag}
+            </li>
           ))
         }
       </ul>
-      <button class="bg-openampred text-white px-4 py-2 rounded-md mt-6"
-        >Read</button
+      <button
+        onclick="
+        window.open('/news/LHR23-BOF-available/')
+        "
+        class="bg-openampred text-white px-4 py-2 rounded-md mt-6">Read</button
       >
     </div>
     <Image class="w-1/2" src={data.image} alt={data.title} />

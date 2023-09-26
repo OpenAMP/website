@@ -1,0 +1,20 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import BlogsHero from "../../../components/News/BlogsHero.astro";
+import BlogsContainer from "../../../components/News/BlogsContainer.astro";
+import MainLayout from "../../../layouts/MainLayout.astro";
+---
+
+<astro>
+  <BaseHead />
+
+  <MainLayout>
+    <BlogsHero>
+      <div class="px-[15px]">
+        <h1 class="text-[3em]">Tagged News Posts</h1>
+        <h2 class="text-left text-[1.25rem]">Find tagged news posts here.</h2>
+      </div>
+    </BlogsHero>
+    <BlogsContainer />
+  </MainLayout>
+</astro>

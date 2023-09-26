@@ -1,14 +1,11 @@
 ---
 import { getCollection, getEntry } from "astro:content";
-import MainLayout from "../layouts/MainLayout.astro";
-import BaseHead from "../components/BaseHead.astro";
-import NewsItem from "../components/News/NewsItem.astro";
-import FirstItem from "../components/News/FirstItem.astro";
+import BaseHead from "../../components/BaseHead.astro";
+import FirstItem from "../../components/News/FirstItem.astro";
+import NewsItem from "../../components/News/NewsItem.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
 
 const blogs = await getCollection("blogs");
-
-const displayBlogs = blogs.pop();
-console.log(displayBlogs);
 ---
 
 <html lang="en">

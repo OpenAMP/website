@@ -2,7 +2,7 @@
 import { getEntry } from "astro:content";
 import github_icon from "../assets/github.svg";
 import { Image } from "astro:assets";
-import LinaroLogo from "../assets/linaro-logo.png";
+import LinaroLogo from "../assets/logo.png";
 import { Icon } from "astro-icon";
 import linkedin_icon from "../assets/linkedin_icon.svg";
 import youtube_icon from "../assets/youtube.svg";
@@ -20,7 +20,10 @@ const { data, render }: any = footer;
       {
         data.links_1.map((item: any) => (
           <div class="pt-4">
-            <a class="text-white no-underline p-4" href={item.url}>
+            <a
+              class="text-white no-underline p-4 hover:underline hover:text-black"
+              href={item.url}
+            >
               {item.label}
             </a>
           </div>
@@ -32,7 +35,10 @@ const { data, render }: any = footer;
       {
         data.links_2.map((item: any) => (
           <div class="pt-4">
-            <a class="text-white no-underline p-4" href={item.url}>
+            <a
+              class="text-white no-underline p-4 hover:underline hover:text-black"
+              href={item.url}
+            >
               {item.label}
             </a>
           </div>
@@ -43,37 +49,64 @@ const { data, render }: any = footer;
   <div class=`flex flex-col text-white bg-[#575757]`>
     <div class="flex md:flex-row flex-col items-center justify-center mt-4">
       <a href="https://github.com/OpenAMP/website"
-        ><Image class="w-[14px] mr-4" src={github_icon} alt="Github logo" /></a
+        ><Image
+          class="w-[14px] mr-4 mb-[1rem] hover:text-openampred hover:bg-[#444444]"
+          src={github_icon}
+          alt="Github logo"
+        /></a
       >
       <!-- <Icon pack="mdi" name="arcticons:github" size='48' /> -->
-      <p class="mr-4 font-medium pt-4">Report an Issue</p>
-      <p class="mr-4 font-medium pt-4">Edit on Gitgub</p>
+      <a
+        href="https://github.com/OpenAMP/website/issues/new?title=Problem+with+_pages/news_tags.md&body=Please+enter+some+details+about+the+bug/issue+so+we+can+promptly+resolve+it.+%0D%0AURL%3A++https://www.openampproject.org/news/tags/"
+        class="flex item-center mb-[1rem] no-underline text-white mr-4 font-medium p-2 cursor-pointer hover:bg-[#444444] hover:justify-center hover:transition-all"
+        >Report an Issue</a
+      >
+      <a
+        href="https://github.com/OpenAMP/website/blob/master/_pages/news_tags.md"
+        class="flex item-center mb-[1rem] no-underline text-white mr-4 font-medium p-2 cursor-pointer hover:bg-[#444444] hover:justify-center hover:transition-all"
+      >
+        Edit on Gitgub
+      </a>
     </div>
-    <div class="flex md:flex-row flex-col justify-center p-4 items-center">
-      <p class="mr-2 pt-4">Copyright © 2023 Linaro</p>
-      <p class="mr-2"><span class="font-black text-3xl">.</span>Legal</p>
-      <p class="mr-2"><span class="font-black text-3xl">.</span>Contact</p>
+    <div class="flex md:flex-row flex-col justify-center items-center">
+      <p class="mr-2 pt-4">Copyright @ 2023 Linaro</p>
+      <a
+        href="https://www.linaro.org/legal/"
+        class="mr-2 cursor-pointer no-underline text-white hover:text-openampred hover:underline mb-[1rem]"
+        ><span class="font-black text-3xl">.</span>Legal</a
+      >
+      <a
+        href="https://www.linaro.org/contact/"
+        class="mr-2 cursor-pointer no-underline text-white hover:text-openampred hover:underline mb-[1rem]"
+        ><span class="font-black text-3xl">.</span>Contact</a
+      >
       <!-- <Icon name="devicon:linkedin" size="48" /> -->
       <a href="https://www.linkedin.com/company/openamp"
         ><Image
-          class="w-[14px] mr-4"
+          class="w-[14px] mr-4 hover:text-openampred"
           src={linkedin_icon}
           alt="linkedIn logo"
         /></a
       >
       <a href="https://github.com/OpenAMP/website"
-        ><Image class="w-[14px] mr-4" src={github_icon} alt="Github logo" /></a
+        ><Image
+          class="w-[14px] mr-4 hover:text-openampred"
+          src={github_icon}
+          alt="Github logo"
+        /></a
       >
       <a href="https://www.youtube.com/@openamp"
         ><Image
-          class="w-[14px] mr-4"
+          class="w-[14px] mr-4 hover:text-openampred"
           src={youtube_icon}
           alt="Youtube logo"
         /></a
       >
     </div>
     <div class="flex flex-row justify-center">
-      <Image class="w-[80px]" src={LinaroLogo} alt="logo" />
+      <a href="/">
+        <Image class="w-[80px]" src={LinaroLogo} alt="logo" />
+      </a>
     </div>
   </div>
 </div>

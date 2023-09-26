@@ -6,7 +6,7 @@ import dayjs from "dayjs";
 
 const dateObj = dayjs(data.date);
 const dateString = dateObj.format("dddd, MMMM D, YYYY");
-console.log(typeof body);
+console.log(data);
 
 const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split by words
 ---
@@ -37,7 +37,9 @@ const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split
     <ul class="flex flex-wrap gap-2 w-full">
       {
         data.tags.map((tag: string) => (
-          <li class="bg-gray-100 p-2 text-sm text-gray-600">{tag}</li>
+          <li class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5]">
+            {tag}
+          </li>
         ))
       }
     </ul>
