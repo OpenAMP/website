@@ -15,7 +15,6 @@ export default function NavLinks({ pages }: { pages: any }) {
       setSelectedPage("");
     }
   });
-  console.log(selectedPage());
 
   return (
     <div class="relative ">
@@ -45,13 +44,16 @@ export default function NavLinks({ pages }: { pages: any }) {
       >
         <Show when={!isOpen()}>
           {pages.map((page: any) => (
-            <div onClick={() => setSelectedPage(page.label.toLowerCase())}>
+            <div
+              class="mb-4"
+              onClick={() => setSelectedPage(page.label.toLowerCase())}
+            >
               <a
                 href={page.url}
                 class={`uppercase text-xs text-[#575757] no-underline p-5 ${
                   selectedPage() === page.label.toLowerCase()
                     ? "border-b-2 border-[#dc4a4a]"
-                    : "hover:border-b-2 hover:border-[#dc4a4a]"
+                    : "hover:border-b-4 hover:border-[#dc4a4a] transition ease-in-out delay-300"
                 }`}
               >
                 {page.label[0].toUpperCase() + page.label.slice(1)}

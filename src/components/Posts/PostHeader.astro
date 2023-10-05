@@ -8,8 +8,6 @@ const { data } = Astro.props;
 const dateObj = dayjs(data.date);
 const dateString = dateObj.format("dddd, MMMM D, YYYY");
 
-console.log("data dd", data.data);
-
 const readTime = `${Math.ceil(
   data.data.description.split(" ").length / 183
 )} min read`;
@@ -39,11 +37,11 @@ const readTime = `${Math.ceil(
               {
                 data.data.tags.map((item: any) => (
                   <a
-                    class="mx-2 hover:bg-[#DBE0E5] cursor-pointer no-underline text-black"
+                    class="mx-2 hover:bg-[#DBE0E5]  cursor-pointer no-underline text-black"
                     role="button"
                     href={`/news/tags/${item}`}
                   >
-                    {item}
+                    {item.toUpperCase()}
                   </a>
                 ))
               }

@@ -8,14 +8,14 @@ const { data } = Astro.props;
 ---
 
 <Header>
-  <Image class="w-full h-[400px] p-4 mt-4" src={logoImage} alt="openAMP Logo" />
+  <Image class="w-full h-[300px]" src={logoImage} alt="openAMP Logo" />
 
   <p class="leading-normal text-center max-w-lg text-lg">{data.main_body}</p>
   <button
     onclick="
     window.open('https://github.com/OpenAMP', '_blank')
     "
-    class="bg-openampred p-4 rounded text-xs text-center transition ease-in-out delay-500 hover:bg-red-600 border-transparent border-2"
+    class="bg-openampred p-4 rounded text-xs text-center transition ease-in-out delay-500 hover:bg-red-600"
     >View on Github</button
   >
 </Header>
