@@ -1,0 +1,57 @@
+---
+import { getEntry } from "astro:content";
+import MainLayout from "../layouts/MainLayout.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+const cookies = await getEntry("pages", "cookies");
+const { data, render }: any = cookies;
+const { Content } = await render();
+---
+
+<html lang="en">
+  <BaseHead />
+  <MainLayout>
+    <header
+      class=`relative text-left  bg-[#d3d3d3] flex flex-col   h-[350px] justify-center `
+    >
+      <div>
+        <div class="max-w-[1100px] justify-center align-center mx-auto">
+          <h1 class="text-[3em]">Cookies</h1>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="text-left text-[1.5rem] decoration-0 p-8 md:p-12 blog-content max-w-[1100px] mx-auto"
+    >
+      <Content />
+    </div>
+  </MainLayout>
+
+  <style is:global lang="scss">
+    .blog-content {
+      p {
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      h2 {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .blockquote-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+      }
+      ul {
+        list-style-type: disc;
+        li {
+          margin-left: 40px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  </style>
+
+
+</html>
