@@ -689,6 +689,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.3.tgz#e5036be529f757e58d9a7771f2f1b14782986a74"
   integrity sha512-FbUN+0ZRXsypPyWE2IwIkVjDkDnJoMJARWOcFZn4KPPli+QnKqF0z1anvfaYe3ev5HFCpRDLLBDHyOALLppWHw==
 
+"@jop-software/astro-cookieconsent@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@jop-software/astro-cookieconsent/-/astro-cookieconsent-2.0.0.tgz#09b6144eb24dc4ed0bb038af4c7748d5b2fe4480"
+  integrity sha512-79uY+scObfEhzfLY+KAOMxEgg0P9EeA5lJM0q+Y6WRhRvqSu4ufvuHOvWrrq8vv9FttxlnKQHCd75dsapINoyQ==
+
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
@@ -3899,6 +3904,11 @@ validate-html-nesting@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/validate-html-nesting/-/validate-html-nesting-1.2.2.tgz#2d74de14b598a0de671fad01bd71deabb93b8aca"
   integrity sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==
+
+vanilla-cookieconsent@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/vanilla-cookieconsent/-/vanilla-cookieconsent-2.9.2.tgz#d4ac2169fdde5e76f7b8345d0dbfb9b946fe99f0"
+  integrity sha512-SHAS5W0DBvvcUtjmVvvYkhmLPmTlgwKzFvViUp5mBimbZCdZKbDQzwyk/TgYq02+61RrtxmDdLGzDWNFpSbsGQ==
 
 vfile-location@^4.0.0:
   version "4.1.0"

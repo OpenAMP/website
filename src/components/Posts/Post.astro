@@ -27,24 +27,25 @@ function contentConvertor(text: string) {
 ---
 
 <div class="max-w-[1200px] mx-auto p-5 md:p-12">
-  <h5 class="text-[1.7rem] p-2">Recent Posts</h5>
+  <h5 class="text-[1.7rem] mb-3">Recent Posts</h5>
   {
     blogLists.map((blog: any) => (
       <a
         href={`/news/${contentConvertor(blog.slug)}`}
-        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred"
+        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred flex flex-col md:flex-row mb-6 md:mb-0"
       >
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col md:flex-row items-start md:items-center ">
+          <div class="w-[200px]  mb-4 md:mb-0 md:mr-4">
             <Image
-              class="w-[100px]  object-contain border border-lightgray"
+              class=" w-20 h-20 object-cover border border-lightgray"
               src={blog.data.image}
               alt="blog image"
             />
           </div>
-          <div class="flex flex-col ml-4">
-            <h5 class="text-[1.7rem] font-medium">{blog.data.title}</h5>
-            <p class="mt-2 italic text-[16px]">
+
+          <div class="flex flex-col md:w-full mt-5 md:mt-0">
+            <h5 class="text-[1.7rem] font-medium mb-2">{blog.data.title}</h5>
+            <p class="italic text-[16px] mb-2 md:mb-4">
               {dateConvertor(blog.data.date)}
             </p>
             <p class="text-[16px]">{blog.data.description}</p>
@@ -53,27 +54,29 @@ function contentConvertor(text: string) {
       </a>
     ))
   }
-  <h5 class="text-[1.7rem] p-2">Other Posts</h5>
+  <h5 class="text-[1.7rem] mb-3">Other Posts</h5>
   {
     otherBlogs.map((blog: any) => (
       <a
         href={`/news/${contentConvertor(blog.slug)}`}
         class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred "
       >
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col md:flex-row items-start md:items-center">
+          <div class="w-[200px]  mb-4 md:mb-0 md:mr-4">
             <Image
-              class="w-[100px] h-auto object-cover border border-lightgray"
+              class="w-20 h-20 object-cover border border-lightgray"
               src={blog.data.image}
               alt="blog image"
             />
           </div>
-          <div class="flex flex-col ml-4">
-            <h5 class="text-[1.7rem] font-medium">{blog.data.title}</h5>
-            <p class="text-[16px] mt-2 italic">
-              {dateConvertor(blog.data.date)}
-            </p>
-            <p class="text-[16px]">{blog.data.description}</p>
+          <div class="flex flex-col md:w-full mt-5 md:mt-0">
+            <div>
+              <h5 class="text-[1.7rem] font-medium mb-2">{blog.data.title}</h5>
+              <p class="text-[16px] italic mb-2 md:mb-4">
+                {dateConvertor(blog.data.date)}
+              </p>
+              <p class="text-[16px]">{blog.data.description}</p>
+            </div>
           </div>
         </div>
       </a>
