@@ -8,7 +8,6 @@ import HomeContent from "../components/Home/HomeContent.astro";
 const conduct = await getEntry("pages", "conduct");
 const { data, render }: any = conduct;
 const { Content } = await render();
-console.log(data);
 ---
 
 <html lang="en">

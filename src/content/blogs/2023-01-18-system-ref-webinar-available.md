@@ -6,11 +6,11 @@ date: 2023-01-18 12:00:00
 description: The Heterogenous Processing Project (HPP) and OpenAMP System Reference working group webinar and supporting materials are posted to the Linaro resources page.
 category: news
 tags:
-  - OpenAMP
-  - Webinar
-  - HPP
-  - Open Source
-  - System-DT
+  - openamp
+  - webinar
+  - hpp
+  - open-source
+  - system-dt
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

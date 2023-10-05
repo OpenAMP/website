@@ -1,15 +1,15 @@
 ---
 title: OpenAMP project joins the Linaro Community Projects division
-author: openamp
+author: OpenAMP
 layout: post
 description: Linaro Ltd, the open source collaborative engineering organization developing software for the Arm® ecosystem, announced today the keynote speakers for Linaro Connect Bangkok 2019. Joining the hundreds of engineers at the Centara Grand, in Bangkok, Thailand 1-5 April 2019, will be industry leaders invited to share their insights into different segments and topics relating to the Arm ecosystem.
 category: news
 date: 2019-09-23 01:00:00
 tags:
-  - Linaro
-  - Arm
-  - Open
-  - Source
+  - linaro
+  - arm
+  - open
+  - source
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

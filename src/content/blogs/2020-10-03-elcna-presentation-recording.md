@@ -6,10 +6,10 @@ date: 2020-10-03 01:00:00
 description: Nathalie C. Chan King Choy and Stefano Stabellini presented on OpenAMP at ELC North America 2020. The recording is now available on YouTube.
 category: news
 tags:
-  - OpenAMP
-  - Presentation
-  - EmbeddedLinuxConference
-  - YouTube
+  - openamp
+  - presentation
+  - embeddedlinuxconference
+  - youtube
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

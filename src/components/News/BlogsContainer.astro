@@ -2,11 +2,14 @@
 import { getCollection, getEntry } from "astro:content";
 
 const blogs = await getCollection("blogs");
-console.log("here", blogs);
 ---
 
 <div class="h-full w-full p-8 relative">
-  <button class="text-white cursor-pointer bg-[#575757] p-2 rounded ml-8"
+  <button
+    onclick="
+    window.open('/news/tags')
+    "
+    class="text-white cursor-pointer bg-[#575757] p-2 rounded ml-8"
     >View all tags</button
   >
 </div>

@@ -1,0 +1,113 @@
+---
+import { Image } from "astro:assets";
+import { Show, createSignal } from "solid-js";
+import { AiOutlineClose, AiOutlineMenu } from "solid-icons/ai";
+import { getCollection, getEntry } from "astro:content";
+import BaseHead from "../../../components/BaseHead.astro";
+import BlogsContainer from "../../../components/News/BlogsHero.astro";
+import MainLayout from "../../../layouts/MainLayout.astro";
+import dayjs from "dayjs";
+
+export async function getStaticPaths({}) {
+  const blogs = await getCollection("blogs");
+  const tags = await getCollection("tags");
+
+  // return paginate(projects, { pageSize: 25 });
+
+  const paths = tags.map((tag) => ({
+    params: {
+      tag: tag.slug,
+    },
+    props: {
+      tag,
+      blogs: blogs.filter((blog) =>
+        blog.data.tags.find((t) => t.slug === tag.slug)
+      ),
+    },
+  }));
+  return paths;
+}
+
+const { tag, blogs } = Astro.props;
+
+function truncateText(text: string, maxLength: number) {
+  if (text.length > maxLength) {
+    return text.slice(0, maxLength) + "...";
+  }
+  return text;
+}
+
+function dateConvertor(text: string) {
+  const dateObj = dayjs(text);
+  const dateString = dateObj.format("dddd, MMMM D, YYYY");
+  return dateString;
+}
+
+function contentConvertor(text: string) {
+  const resultString = text.replace(/^\d{4}-\d{2}-\d{2}-/, "");
+  return resultString;
+}
+---
+
+<html>
+  <BaseHead />
+
+  <MainLayout>
+    <BlogsContainer />
+    <div
+      class="text-left flex flex-col p-4 md:p-12 justify-center max-w-[1100px] mx-auto"
+    >
+      <div>
+        <button
+          id="showButton"
+          class="bg-[#575757] text-white cursor-pointer p-2 rounded-md text-base font-normal w-[150px]"
+          >View all tags</button
+        >
+
+        <h3 class="font-medium text-[1.75rem] mt-4">{tag.data.name}</h3>
+        {
+          blogs.map((blog: any) => (
+            <a
+              href={`/news/${contentConvertor(blog.slug)}`}
+              class="text-black no-underline cursor-pointer hover:text-openampred "
+            >
+              <div class="flex md:flex-row flex-col">
+                <Image
+                  class="w-[200px]  object-contain"
+                  src={blog.data.image}
+                  alt="blog image"
+                />
+                <div class="flex flex-col">
+                  <h5 class="text-[1.7rem] font-medium">{blog.data.title}</h5>
+                  <p class="text-[19.2px] mt-2">
+                    Posted by{" "}
+                    <span class="font-bold">
+                      {blog.data.author.toUpperCase()}
+                    </span>{" "}
+                    on {dateConvertor(blog.data.date)}
+                  </p>
+                  <p class="text-[19.2px]">
+                    {truncateText(blog.data.description, 50)}
+                  </p>
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </MainLayout>
+  <script>
+    const showButton = document.getElementById("showButton");
+    let isShow = false;
+    showButton?.addEventListener("click", function () {
+      isShow = true;
+
+      if (isShow) {
+        window.location.href = "/news/tags";
+      }
+    });
+  </script>
+
+
+</html>

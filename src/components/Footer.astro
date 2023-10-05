@@ -21,7 +21,7 @@ const { data, render }: any = footer;
         data.links_1.map((item: any) => (
           <div class="pt-4">
             <a
-              class="text-white no-underline p-4 hover:underline hover:text-black"
+              class="text-white no-underline p-4 hover:underline hover:text-black transition ease-in-out delay-500"
               href={item.url}
             >
               {item.label}
@@ -36,7 +36,7 @@ const { data, render }: any = footer;
         data.links_2.map((item: any) => (
           <div class="pt-4">
             <a
-              class="text-white no-underline p-4 hover:underline hover:text-black"
+              class="text-white no-underline p-4 hover:underline hover:text-black transition ease-in-out delay-500"
               href={item.url}
             >
               {item.label}
@@ -80,28 +80,30 @@ const { data, render }: any = footer;
         class="mr-2 cursor-pointer no-underline text-white hover:text-openampred hover:underline mb-[1rem]"
         ><span class="font-black text-3xl">.</span>Contact</a
       >
-      <!-- <Icon name="devicon:linkedin" size="48" /> -->
-      <a href="https://www.linkedin.com/company/openamp"
-        ><Image
-          class="w-[14px] mr-4 hover:text-openampred"
-          src={linkedin_icon}
-          alt="linkedIn logo"
-        /></a
-      >
-      <a href="https://github.com/OpenAMP/website"
-        ><Image
-          class="w-[14px] mr-4 hover:text-openampred"
-          src={github_icon}
-          alt="Github logo"
-        /></a
-      >
-      <a href="https://www.youtube.com/@openamp"
-        ><Image
-          class="w-[14px] mr-4 hover:text-openampred"
-          src={youtube_icon}
-          alt="Youtube logo"
-        /></a
-      >
+      <div class="flex flex-row mb-4">
+        <!-- <Icon name="devicon:linkedin" size="48" /> -->
+        <a href="https://www.linkedin.com/company/openamp"
+          ><Image
+            class="w-[14px] mr-4 hover:text-openampred"
+            src={linkedin_icon}
+            alt="linkedIn logo"
+          /></a
+        >
+        <a href="https://github.com/OpenAMP/website"
+          ><Image
+            class="w-[14px] mr-4 hover:text-openampred"
+            src={github_icon}
+            alt="Github logo"
+          /></a
+        >
+        <a href="https://www.youtube.com/@openamp"
+          ><Image
+            class="w-[14px] mr-4 hover:text-openampred"
+            src={youtube_icon}
+            alt="Youtube logo"
+          /></a
+        >
+      </div>
     </div>
     <div class="flex flex-row justify-center">
       <a href="/">

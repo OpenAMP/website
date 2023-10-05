@@ -7,11 +7,11 @@ description: |
   Bruce Ashfield and Stefano Stabellini from AMD Xilinx presented at Embedded Linux Conference 2022 about "System Device Tree and Lopper: Concrete Examples"
 category: news
 tags:
-  - OpenAMP
-  - Lopper
-  - Conference
-  - Open Source
-  - System-DT
+  - openamp
+  - lopper
+  - conference
+  - open-source
+  - system-dt
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

@@ -7,11 +7,11 @@ description: |
   Dan Milea from Wind River has written a blog post "Hypervisor-less virtio: Assembling Multi-OS systems using standards-based protocols for intra-SoC connectivity and device sharing".
 category: news
 tags:
-  - OpenAMP
-  - Virtio
-  - Blog
-  - Open Source
-  - App-services
+  - openamp
+  - virtio
+  - blog
+  - open-source
+  - app-services
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

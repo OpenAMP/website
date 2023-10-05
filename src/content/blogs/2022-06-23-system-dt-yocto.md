@@ -6,11 +6,11 @@ date: 2022-06-23 01:05:00
 description: Mark Hatle from AMD Xilinx presented at Embedded Linux Conference 2022 about "Configuring and Building a Heterogenous System Using the Yocto Project"
 category: news
 tags:
-  - OpenAMP
-  - Yocto
-  - Conference
-  - Open Source
-  - System-DT
+  - openamp
+  - yocto
+  - conference
+  - open-source
+  - system-dt
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

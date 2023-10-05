@@ -3,7 +3,12 @@ const { data } = Astro.props;
 ---
 
 <header
-  class=`relative text-left  bg-[#d3d3d3] flex flex-col p-8 md:p-12 h-[350px] justify-center`
+  class=`relative text-left  bg-[#d3d3d3] flex flex-col p-8 md:p-12 h-[350px] justify-center `
 >
-  <slot />
+  <div class="px-[10px]">
+    <div class="max-w-[1100px] justify-center align-center mx-auto">
+      <h1 class="text-[3em]">Tagged News Posts</h1>
+      <h2 class="text-left text-[1.25rem]">Find tagged news posts here.</h2>
+    </div>
+  </div>
 </header>

@@ -6,6 +6,7 @@ import NewsItem from "../../components/News/NewsItem.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 
 const blogs = await getCollection("blogs");
+const blogLists = blogs.reverse();
 ---
 
 <html lang="en">
@@ -13,13 +14,8 @@ const blogs = await getCollection("blogs");
   <MainLayout>
     <section class="max-w-7xl mx-auto">
       <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 mb-4">
-        <FirstItem {...blogs[0]} />
-        {
-          blogs
-            .reverse()
-            .slice(1)
-            .map((blog) => <NewsItem {...blog} />)
-        }
+        <FirstItem {...blogLists[0]} />
+        {blogLists.slice(1).map((blog) => <NewsItem {...blog} />)}
       </ul>
     </section>
   </MainLayout>

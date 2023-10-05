@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import dayjs from "dayjs";
+import { Image } from "astro:assets";
+
+const blogs = await getCollection("blogs");
+const blogLists = blogs.reverse().slice(0, 3);
+const otherBlogs = blogs.reverse().slice(3, 10);
+
+function truncateText(text: string, maxLength: number) {
+  if (text.length > maxLength) {
+    return text.slice(0, maxLength) + "...";
+  }
+  return text;
+}
+
+function dateConvertor(text: string) {
+  const dateObj = dayjs(text);
+  const dateString = dateObj.format("dddd, MMMM D, YYYY");
+  return dateString;
+}
+
+function contentConvertor(text: string) {
+  const resultString = text.replace(/^\d{4}-\d{2}-\d{2}-/, "");
+  return resultString;
+}
+---
+
+<div class="max-w-[1200px] mx-auto p-5 md:p-12">
+  <h5 class="text-[1.7rem] p-2">Recent Posts</h5>
+  {
+    blogLists.map((blog: any) => (
+      <a
+        href={`/news/${contentConvertor(blog.slug)}`}
+        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred"
+      >
+        <div class="flex flex-row">
+          <div>
+            <Image
+              class="w-[100px]  object-contain border border-lightgray"
+              src={blog.data.image}
+              alt="blog image"
+            />
+          </div>
+          <div class="flex flex-col ml-4">
+            <h5 class="text-[1.7rem] font-medium">{blog.data.title}</h5>
+            <p class="mt-2 italic text-[16px]">
+              {dateConvertor(blog.data.date)}
+            </p>
+            <p class="text-[16px]">{blog.data.description}</p>
+          </div>
+        </div>
+      </a>
+    ))
+  }
+  <h5 class="text-[1.7rem] p-2">Other Posts</h5>
+  {
+    otherBlogs.map((blog: any) => (
+      <a
+        href={`/news/${contentConvertor(blog.slug)}`}
+        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred "
+      >
+        <div class="flex flex-row">
+          <div>
+            <Image
+              class="w-[100px] h-auto object-cover border border-lightgray"
+              src={blog.data.image}
+              alt="blog image"
+            />
+          </div>
+          <div class="flex flex-col ml-4">
+            <h5 class="text-[1.7rem] font-medium">{blog.data.title}</h5>
+            <p class="text-[16px] mt-2 italic">
+              {dateConvertor(blog.data.date)}
+            </p>
+            <p class="text-[16px]">{blog.data.description}</p>
+          </div>
+        </div>
+      </a>
+    ))
+  }
+</div>

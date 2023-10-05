@@ -6,12 +6,12 @@ date: 2020-07-07 23:00:00
 description: New standards like the OpenAMP Framework let embedded developers take advantage of the features of the MPSoC to separate the safe world from the unsafe world, while maintaining system communications through technologies.
 category: news
 tags:
-  - Mentor
-  - Embedded
-  - OpenAMP
-  - Safety
-  - Open
-  - Source
+  - mentor
+  - embedded
+  - openamp
+  - safety
+  - open
+  - source
 image: ../../assets/images/members/Mentor-ASB_small.png
 ---
 

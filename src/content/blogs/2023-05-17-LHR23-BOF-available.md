@@ -6,10 +6,10 @@ date: 2023-05-17 23:00:00
 description: The LHR23 AMP BOF slides and recording are posted to the Linaro resources page.
 category: news
 tags:
-  - HPP
-  - AMP
-  - BOF
-  - Linaro Connect
+  - hpp
+  - amp
+  - bof
+  - linaro-connect
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

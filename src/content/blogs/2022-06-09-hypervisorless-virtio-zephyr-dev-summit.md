@@ -7,11 +7,11 @@ description: |
   Dan Milea from Wind River presented at Zephyr Developer Summit 2022 about "Hypervisor-less Virtio: Assembling Multi-OS Systems Using Standards-based Protocols for Intra-SoC Connectivity and Device Sharing".
 category: news
 tags:
-  - OpenAMP
-  - Virtio
-  - Conference
-  - Open Source
-  - App-services
+  - openamp
+  - virtio
+  - conference
+  - open-source
+  - app-services
 image: ../../assets/images/content/openAMP_share_image.png
 ---
 

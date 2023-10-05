@@ -1,19 +1,35 @@
 ---
 import { Image } from "astro:assets";
 const { data, body } = Astro.props;
+import { getCollection } from "astro:content";
 import OpenAMPLogo from "../../assets/images/content/openAMP_LOGOMARKX.png";
 import dayjs from "dayjs";
 
 const dateObj = dayjs(data.date);
 const dateString = dateObj.format("dddd, MMMM D, YYYY");
-console.log(data);
 
-const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split by words
+const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`;
+
+const projects = await getCollection("projects");
+
+function findUrl(inputPr: any) {
+  const trimmedInput = inputPr.trim().toLowerCase();
+  const selectedPr = projects.find(
+    (project: any) => project.data.title.trim().toLowerCase() === trimmedInput
+  );
+
+  if (selectedPr) {
+    return selectedPr.slug;
+  }
+
+  return "/";
+}
+const convertedTitle = findUrl(data.title);
 ---
 
 <a
   class="h-full w-full text-inherit no-underline cursor-pointer"
-  href={data.url}
+  href=`/news/${convertedTitle}`
 >
   <div
     class="card h-full opacity-100 flex-col items-center shadow-lg duration-300 hover:drop-shadow-xl hover:scale-105 m-4 p-12"
@@ -36,9 +52,12 @@ const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`; // Split
     <p>{data.description}</p>
     <ul class="flex flex-wrap gap-2 w-full">
       {
-        data.tags.map((tag: string) => (
-          <li class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5]">
-            {tag}
+        data.tags.map((tag: any) => (
+          <li
+            onclick={`window.location.href='/news/tags/${tag.slug}/';`}
+            class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5]"
+          >
+            {tag.slug.toUpperCase()}
           </li>
         ))
       }
