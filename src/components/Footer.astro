@@ -1,14 +1,13 @@
 ---
 import { getEntry } from "astro:content";
-import github_icon from "../assets/github.svg";
 import { Image } from "astro:assets";
 import LinaroLogo from "../assets/logo.png";
-import { Icon } from "astro-icon";
-import linkedin_icon from "../assets/linkedin_icon.svg";
-import youtube_icon from "../assets/youtube.svg";
+import { FaBrandsGithubAlt } from "solid-icons/fa";
+import { ImLinkedin2 } from "solid-icons/im";
+import { TiSocialYoutubeCircular } from "solid-icons/ti";
 
 const footer = await getEntry("pages", "footer");
-const { data, render }: any = footer;
+const { data }: any = footer;
 ---
 
 <div>
@@ -48,14 +47,12 @@ const { data, render }: any = footer;
   </div>
   <div class=`flex flex-col text-white bg-[#575757]`>
     <div class="flex md:flex-row flex-col items-center justify-center mt-4">
-      <a href="https://github.com/OpenAMP/website"
-        ><Image
-          class="w-[14px] mr-4 mb-[1rem] hover:text-openampred hover:bg-[#444444]"
-          src={github_icon}
-          alt="Github logo"
-        /></a
-      >
-      <!-- <Icon pack="mdi" name="arcticons:github" size='48' /> -->
+      <a href="https://github.com/OpenAMP/website">
+        <FaBrandsGithubAlt
+          class="w-[14px] text-white mr-4 mb-[1rem] hover:text-openampred hover:bg-[#444444]"
+        />
+      </a>
+
       <a
         href="https://github.com/OpenAMP/website/issues/new?title=Problem+with+_pages/news_tags.md&body=Please+enter+some+details+about+the+bug/issue+so+we+can+promptly+resolve+it.+%0D%0AURL%3A++https://www.openampproject.org/news/tags/"
         class="flex item-center mb-[1rem] no-underline text-white mr-4 font-medium p-2 cursor-pointer hover:bg-[#444444] hover:justify-center hover:transition-all"
@@ -80,29 +77,20 @@ const { data, render }: any = footer;
         class="mr-2 cursor-pointer no-underline text-white hover:text-openampred hover:underline mb-[1rem]"
         ><span class="font-black text-3xl">.</span>Contact</a
       >
-      <div class="flex flex-row mb-4">
-        <!-- <Icon name="devicon:linkedin" size="48" /> -->
-        <a href="https://www.linkedin.com/company/openamp"
-          ><Image
-            class="w-[14px] mr-4 hover:text-openampred"
-            src={linkedin_icon}
-            alt="linkedIn logo"
-          /></a
-        >
-        <a href="https://github.com/OpenAMP/website"
-          ><Image
-            class="w-[14px] mr-4 hover:text-openampred"
-            src={github_icon}
-            alt="Github logo"
-          /></a
-        >
-        <a href="https://www.youtube.com/@openamp"
-          ><Image
-            class="w-[14px] mr-4 hover:text-openampred"
-            src={youtube_icon}
-            alt="Youtube logo"
-          /></a
-        >
+      <div class="flex flex-row mb-1 ml-2">
+        <a href="https://www.linkedin.com/company/openamp">
+          <ImLinkedin2 class="w-[14px] text-white mr-4 hover:text-openampred" />
+        </a>
+        <a href="https://github.com/OpenAMP/website">
+          <FaBrandsGithubAlt
+            class="w-[14px] text-white mr-4 hover:text-openampred"
+          />
+        </a>
+        <a href="https://www.youtube.com/@openamp">
+          <TiSocialYoutubeCircular
+            class="w-[16px] text-white mr-4 hover:text-openampred"
+          />
+        </a>
       </div>
     </div>
     <div class="flex flex-row justify-center">
