@@ -26,7 +26,7 @@ The content of the website is located in the `src/content` folder of the repo, s
 
 ### Pages
 
-Pages can be edited via the relevant `.md` files in the `src/content/pages` folder. New pages containing the nav, header, footer and a body of rendered markdown content by added by adding `.md` files to this folder (as with the cookies, conduct and governance pages). If rendered markdown content is not sufficient, please contact [it-support@linaro.org](mailto:it-support@linaro.org) to discuss implementing a new page.
+Pages can be edited via the relevant `.md` files in the `src/content/pages` folder. New pages containing the nav, header, footer and a body of rendered markdown content can be implemented by adding `.md` files to this folder (as with the cookies, conduct and governance pages). If rendered markdown content is not sufficient, please contact [it-support@linaro.org](mailto:it-support@linaro.org) to discuss implementing a new page.
 
 ### News
 
