@@ -1,5 +1,4 @@
 ---
-import heroImage from "../../assets/triangle_background.png";
 import Header from "../Header.astro";
 import { Image } from "astro:assets";
 import logoImage from "../../assets/openAMP_combox_dark.svg";
@@ -8,14 +7,16 @@ const { data } = Astro.props;
 ---
 
 <Header>
-  <Image class="w-full h-[300px]" src={logoImage} alt="openAMP Logo" />
+  <Image height={300} src={logoImage} alt="openAMP Logo" />
 
-  <p class="leading-normal text-center max-w-lg text-lg">{data.main_body}</p>
-  <button
+  <p class="leading-normal text-center max-w-xl text-xl mb-4">
+    {data.main_body}
+  </p>
+  <a
     onclick="
     window.open('https://github.com/OpenAMP', '_blank')
     "
-    class="bg-openampred p-4 rounded text-xs text-center transition ease-in-out delay-500 hover:bg-red-600"
-    >View on Github</button
+    class="bg-openampred mt-2 p-4 rounded text-md text-center transition ease-in-out hover:bg-red-600 text-white"
+    >View on Github</a
   >
 </Header>

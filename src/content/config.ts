@@ -1,23 +1,10 @@
 import { defineCollection, reference, z } from "astro:content";
 
-const members = defineCollection({
-  type: "data",
-  schema: ({ image }) =>
-    z.array(
-      z.object({
-        name: z.string(),
-        alt: z.string(),
-        url: z.string(),
-        image: image(),
-      })
-    ),
-});
-
-const blogs = defineCollection({
+const news = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      author: z.string(),
+      author: reference("authors"),
       date: z.date(),
       description: z.string(),
       tags: z.array(reference("tags")),
@@ -30,8 +17,22 @@ const tags = defineCollection({
   schema: () => z.object({ name: z.string() }),
 });
 
+const authors = defineCollection({
+  type: "data",
+  schema: () => z.object({ name: z.string() }),
+});
+
+const data = defineCollection({
+  type: "data",
+  schema: ({ image }) =>
+    z
+      .array(z.object({ image: image(), alt: z.string(), url: z.string() }))
+      .or(z.any()),
+});
+
 export const collections = {
-  members,
-  blogs,
+  authors,
+  data,
   tags,
+  news,
 };

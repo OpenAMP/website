@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         secondary: "rgb(87,87,87)",
-        openampred: "rgb(220, 74, 74)",
+        openampred: "#dc4a4a",
+        black: "#212529",
       },
       maxWidth: {
         "1/2": "50%",
@@ -21,4 +22,5 @@ module.exports = {
       spacing: "margin, padding",
     },
   },
+  plugins: [require("@tailwindcss/typography")],
 };

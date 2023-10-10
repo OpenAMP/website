@@ -1,47 +1,70 @@
-# Astro Starter Kit: Minimal
+# OpenAMP Project Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This is the git repository for the OpenAMP project website.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Project Structure
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+The content of the website is located in the `src/content` folder of the repo, spread across various folders, referred to as "collections".
 
 ```text
-/
-├── public/
+
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+
+│   └── content/
+
+│       └── authors/
+
+│       └── data/
+
+│       └── news/
+
+│       └── pages/
+
+│       └── tags/
+
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Pages
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Pages can be edited via the relevant `.md` files in the `src/content/pages` folder. New pages containing the nav, header, footer and a body of rendered markdown content by added by adding `.md` files to this folder (as with the cookies, conduct and governance pages). If rendered markdown content is not sufficient, please contact [it-support@linaro.org](mailto:it-support@linaro.org) to discuss implementing a new page.
 
-Any static assets, like images, can be placed in the `public/` directory.
+### News
 
-## 🧞 Commands
+News items can be added in the `src/content/news` folder. Please follow the format of the existing items, as the schema is explicitly enforced and the project will fail to build (on purpose) if it is not followed correctly.
 
-All commands are run from the root of the project, from a terminal:
+Note that the `author` and `tags` field must reference items in the respective content collections by filename (without extension).
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+For example
 
-## 👀 Want to learn more?
+```yaml
+title: Recording of OpenAMP presentation at ELC North America 2020
+author: openamp
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+`openamp` here references `src/content/authors/openamp.md`
+
+### Images
+
+Images should be placed in the `src/assets` folder and referenced by relative paths within content collection `.md` files. This ensures that the images are optimized at build time, improving website performance.
+
+### Data
+
+The `src/content/data` folder contains various lists of one-off items used in the site, namely the nav links, footer links and members. Any items added to these lists will be reflected in the website.
+
+## Developer Info
+
+Running the site locally will require `Node.js` (>=18) and the `yarn` package manager.
+
+First, install dependencies with `yarn install`.
+
+The following commands can then be used to build and run the site locally:
+
+| Command        | Description                                                                                                                                                                             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `yarn build`   | Builds the site in the `dist` folder of the root directory.                                                                                                                             |
+| `yarn dev`     | Runs the site in a development server, with hot module replacement to reflect updates to the code as soon as they are saved.                                                            |
+| `yarn preview` | Runs the most recent build files in a development server. Unlike `yarn dev` this won't have live updates, but will be a closer representation of the site as it would be in deployment. |
+
+## Questions?
+
+If you have any questions about updating or building this website, please contact Linaro IT Support at [it-support@linaro.org](mailto:it-support@linaro.org).

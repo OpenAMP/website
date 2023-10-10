@@ -3,16 +3,11 @@ import { getCollection } from "astro:content";
 import dayjs from "dayjs";
 import { Image } from "astro:assets";
 
-const blogs = await getCollection("blogs");
-const blogLists = blogs.reverse().slice(0, 3);
-const otherBlogs = blogs.reverse().slice(3, 10);
-
-function truncateText(text: string, maxLength: number) {
-  if (text.length > maxLength) {
-    return text.slice(0, maxLength) + "...";
-  }
-  return text;
-}
+const blogs = await getCollection("news");
+const orderedBlogs = blogs.sort((a, b) =>
+  dayjs(b.data.date).diff(dayjs(a.data.date))
+);
+const blogLists = orderedBlogs.slice(0, 5);
 
 function dateConvertor(text: string) {
   const dateObj = dayjs(text);
@@ -26,57 +21,26 @@ function contentConvertor(text: string) {
 }
 ---
 
-<div class="max-w-[1200px] mx-auto p-5 md:p-12">
-  <h5 class="text-[1.7rem] mb-3">Recent Posts</h5>
+<div class="max-w-5xl mx-auto px-5 md:px-12 mb-16">
+  <h2 class="my-12 font-bold">Recent Posts</h2>
   {
     blogLists.map((blog: any) => (
       <a
         href={`/news/${contentConvertor(blog.slug)}`}
-        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred flex flex-col md:flex-row mb-6 md:mb-0"
+        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred "
       >
-        <div class="flex flex-col md:flex-row items-start md:items-center ">
-          <div class="w-[200px]  mb-4 md:mb-0 md:mr-4">
-            <Image
-              class=" w-20 h-20 object-cover border border-lightgray"
-              src={blog.data.image}
-              alt="blog image"
-            />
-          </div>
-
-          <div class="flex flex-col md:w-full mt-5 md:mt-0">
-            <h5 class="text-[1.7rem] font-medium mb-2">{blog.data.title}</h5>
-            <p class="italic text-[16px] mb-2 md:mb-4">
+        <div class="flex flex-col md:flex-row items-start gap-10 mt-8">
+          <Image
+            class="object-cover border border-lightgray m-0 w-full md:w-36"
+            src={blog.data.image}
+            alt="blog image"
+          />
+          <div>
+            <h5 class="text-[1.7rem] font-medium ">{blog.data.title}</h5>
+            <p class="text-[16px] italic md:mb-4">
               {dateConvertor(blog.data.date)}
             </p>
             <p class="text-[16px]">{blog.data.description}</p>
-          </div>
-        </div>
-      </a>
-    ))
-  }
-  <h5 class="text-[1.7rem] mb-3">Other Posts</h5>
-  {
-    otherBlogs.map((blog: any) => (
-      <a
-        href={`/news/${contentConvertor(blog.slug)}`}
-        class="text-black no-underline cursor-pointer text-[20px] hover:text-openampred "
-      >
-        <div class="flex flex-col md:flex-row items-start md:items-center">
-          <div class="w-[200px]  mb-4 md:mb-0 md:mr-4">
-            <Image
-              class="w-20 h-20 object-cover border border-lightgray"
-              src={blog.data.image}
-              alt="blog image"
-            />
-          </div>
-          <div class="flex flex-col md:w-full mt-5 md:mt-0">
-            <div>
-              <h5 class="text-[1.7rem] font-medium mb-2">{blog.data.title}</h5>
-              <p class="text-[16px] italic mb-2 md:mb-4">
-                {dateConvertor(blog.data.date)}
-              </p>
-              <p class="text-[16px]">{blog.data.description}</p>
-            </div>
           </div>
         </div>
       </a>

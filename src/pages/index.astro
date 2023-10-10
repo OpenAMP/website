@@ -2,8 +2,7 @@
 import { getEntry } from "astro:content";
 import Hero from "../components/Home/Hero.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import BaseHead from "../components/BaseHead.astro";
-import HomeContent from "../components/Home/HomeContent.astro";
+import BaseHead from "../components/Head/BaseHead.astro";
 
 const homepage = await getEntry("pages", "homepage");
 const { data, render }: any = homepage;
@@ -14,8 +13,7 @@ const { Content } = await render();
   <BaseHead />
   <MainLayout>
     <Hero data={data} />
-    <!-- <HomeContent data={data} /> -->
-    <section class="text-lg text-center decoration-0">
+    <section class="text-center decoration-0 prose-xl mb-8">
       <Content />
     </section>
   </MainLayout>

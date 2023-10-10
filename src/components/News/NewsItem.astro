@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { data, body } = Astro.props;
-import { getCollection } from "astro:content";
+const { data, body, slug } = Astro.props;
 import OpenAMPLogo from "../../assets/images/content/openAMP_LOGOMARKX.png";
 import dayjs from "dayjs";
 
@@ -10,57 +9,39 @@ const dateString = dateObj.format("dddd, MMMM D, YYYY");
 
 const readTime = `${Math.ceil(body.split(" ").length / 183)} min read`;
 
-const projects = await getCollection("projects");
-
-function findUrl(inputPr: any) {
-  const trimmedInput = inputPr.trim().toLowerCase();
-  const selectedPr = projects.find(
-    (project: any) => project.data.title.trim().toLowerCase() === trimmedInput
-  );
-
-  if (selectedPr) {
-    return selectedPr.slug;
-  }
-
-  return "/";
-}
-const convertedTitle = findUrl(data.title);
+const convertedTitle = slug;
 ---
 
-<a
-  class="h-full w-full text-inherit no-underline cursor-pointer"
-  href=`/news/${convertedTitle}`
->
-  <div
-    class="card h-full opacity-100 flex-col items-center shadow-lg duration-300 hover:drop-shadow-xl hover:scale-105 m-4 p-12"
-  >
-    <Image class="w-64" src={data.image} alt={data.title} />
-    <div class="flex w-full justify-between items-center my-4">
-      <i class="text-xl">OpenAMP</i><Image
-        class="w-12"
-        src={OpenAMPLogo}
-        alt="OpenAMP logo"
-      />
-    </div>
-    <h2 class="text-xl text-left">{data.title}</h2>
-    <p class="text-slate-500 w-full">{dateString}</p>
-    <div
-      class="bg-gray-100 text-gray-700 font-bold text-sm self-start my-2 p-1"
+{
+  (
+    <button
+      onclick={`window.location.href='/news/${convertedTitle}/';`}
+      class="h-full w-full text-inherit no-underline cursor-pointer"
     >
-      {readTime}
-    </div>
-    <p>{data.description}</p>
-    <ul class="flex flex-wrap gap-2 w-full">
-      {
-        data.tags.map((tag: any) => (
-          <li
-            onclick={`window.location.href='/news/tags/${tag.slug}/';`}
-            class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5]"
-          >
-            {tag.slug.toUpperCase()}
-          </li>
-        ))
-      }
-    </ul>
-  </div>
-</a>
+      <div class="card h-full opacity-100 flex-col items-center shadow-lg duration-300 hover:drop-shadow-xl hover:scale-105 m-4 p-12">
+        <Image class="w-64" src={data.image} alt={data.title} />
+        <div class="flex w-full justify-between items-center my-4">
+          <>
+            <i class="text-xl">OpenAMP</i>
+            <Image class="w-12" src={OpenAMPLogo} alt="OpenAMP logo" />
+          </>
+        </div>
+        <h2 class="text-xl text-left">{data.title}</h2>
+        <p class="text-slate-500 w-full">{dateString}</p>
+        <div class="bg-gray-100 text-gray-700 font-bold text-sm self-start my-2 p-1">
+          {readTime}
+        </div>
+        <p class="text-left mb-4">{data.description}</p>
+        <ul class="flex flex-wrap gap-2 w-full">
+          {data.tags.map((tag: any) => (
+            <li class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5] transition ease-in-out delay-150 rounded-md">
+              <a class="text-inherit" href={`/news/tags/${tag.slug}`}>
+                {tag.slug.toUpperCase()}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </button>
+  )
+}

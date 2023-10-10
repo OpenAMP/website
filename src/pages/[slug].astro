@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import BaseHead from "../components/Head/BaseHead.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+// import "../styles/global.scss";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+  const filteredPages = pages.filter(
+    (page) => page.id !== "homepage.md" && page.id !== "about.md"
+  );
+  return filteredPages.map((page) => {
+    return {
+      params: {
+        slug: page.data!.slug,
+      },
+      props: {
+        page,
+      },
+    };
+  });
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<html lang="en">
+  <BaseHead />
+  <MainLayout>
+    <!-- <Hero data={page.data} /> -->
+    <Header>
+      <div class="text-left">
+        <h1>{page.data.main_title}</h1>
+        <p>{page.data.main_body}</p>
+      </div>
+    </Header>
+    <section
+      class="text-left decoration-0 prose container max-w-3xl prose-a:text-openampred prose-headings:my-8 prose-li:list-disc"
+    >
+      <Content />
+    </section>
+  </MainLayout>
+</html>

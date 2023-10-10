@@ -1,12 +1,10 @@
 ---
 import heroImage from "../assets/images/triangle_background.png";
-
-const { data } = Astro.props;
 ---
 
 <header
   class=`text-center relative text-white flex flex-col items-center justify-center p-4 md:p-12 h-full w-full`
-  style=`background-image: url(${heroImage.src}); background-size: cover ;filter: brightness(1.5)`
+  style=`background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${heroImage.src}); background-size: cover; background-position: center`
 >
   <slot />
 </header>
