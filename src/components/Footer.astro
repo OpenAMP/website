@@ -2,17 +2,15 @@
 import { getEntry } from "astro:content";
 import { Image } from "astro:assets";
 import LinaroLogo from "../assets/logo.png";
-import { FaBrandsGithubAlt } from "solid-icons/fa";
-import { ImLinkedin2 } from "solid-icons/im";
-import { TiSocialYoutubeCircular } from "solid-icons/ti";
+import Icon from "astro-icon";
 
-const footer = await getEntry("pages", "footer");
+const footer = await getEntry("data", "footer");
 const { data }: any = footer;
 ---
 
 <div>
   <div
-    class=`flex-wrap text-center text-white flex flex-row justify-center p-4 md:p-12 bg-[#dc4a4a]`
+    class=`flex-wrap text-left text-white flex flex-row justify-center gap-10  bg-openampred px-4 sm:px-8 py-16`
   >
     <div>
       <h2 class="font-semibold">{data.main_title_1}</h2>
@@ -46,54 +44,60 @@ const { data }: any = footer;
     </div>
   </div>
   <div class=`flex flex-col text-white bg-[#575757]`>
-    <div class="flex md:flex-row flex-col items-center justify-center mt-4">
+    <div class="flex flex-wrap flex-row items-center justify-center mt-4 gap-4">
       <a href="https://github.com/OpenAMP/website">
-        <FaBrandsGithubAlt
-          class="w-[14px] text-white mr-4 mb-[1rem] hover:text-openampred hover:bg-[#444444]"
+        <Icon
+          name="mdi:github"
+          class="w-6 text-white mb-[1rem] hover:text-openampred"
         />
       </a>
 
       <a
-        href="https://github.com/OpenAMP/website/issues/new?title=Problem+with+_pages/news_tags.md&body=Please+enter+some+details+about+the+bug/issue+so+we+can+promptly+resolve+it.+%0D%0AURL%3A++https://www.openampproject.org/news/tags/"
-        class="flex item-center mb-[1rem] no-underline text-white mr-4 font-medium p-2 cursor-pointer hover:bg-[#444444] hover:justify-center hover:transition-all"
+        href="https://github.com/OpenAMP/website/issues/new?title=Problem+with+_pages/news_tags.sm&body=Please+enter+some+details+about+the+bug/issue+so+we+can+promptly+resolve+it.+%0D%0AURL%3A++https://www.openampproject.org/news/tags/"
+        class="flex item-center mb-[1rem] no-underline text-white font-medium p-2 cursor-pointer hover:text-openampred hover:underline hover:transition-all rounded-md"
         >Report an Issue</a
       >
       <a
-        href="https://github.com/OpenAMP/website/blob/master/_pages/news_tags.md"
-        class="flex item-center mb-[1rem] no-underline text-white mr-4 font-medium p-2 cursor-pointer hover:bg-[#444444] hover:justify-center hover:transition-all"
+        href="https://github.com/OpenAMP/website/blob/master/_pages/news_tags.sm"
+        class="flex item-center mb-[1rem] no-underline text-white font-medium p-2 cursor-pointer hover:text-openampred hover:underline hover:transition-all rounded-md"
       >
-        Edit on Gitgub
+        Edit on Github
       </a>
     </div>
-    <div class="flex md:flex-row flex-col justify-center items-center">
-      <p class="mr-2 pt-4">Copyright @ 2023 Linaro</p>
+    <div class="flex flex-row flex-wrap justify-center items-center gap-3">
+      <p class="h-full">Copyright @ 2023 Linaro</p>
       <a
         href="https://www.linaro.org/legal/"
-        class="mr-2 cursor-pointer no-underline text-white hover:text-openampred hover:underline mb-[1rem]"
-        ><span class="font-black text-3xl">.</span>Legal</a
+        class="cursor-pointer no-underline text-white hover:text-openampred hover:underline"
+        >Legal</a
       >
       <a
         href="https://www.linaro.org/contact/"
-        class="mr-2 cursor-pointer no-underline text-white hover:text-openampred hover:underline mb-[1rem]"
-        ><span class="font-black text-3xl">.</span>Contact</a
+        class="cursor-pointer no-underline text-white hover:text-openampred hover:underline"
+        >Contact</a
       >
-      <div class="flex flex-row mb-1 ml-2">
-        <a href="https://www.linkedin.com/company/openamp">
-          <ImLinkedin2 class="w-[14px] text-white mr-4 hover:text-openampred" />
+      <div class="flex flex-row h-full gap-3">
+        <a href="https://www.linkedin.com/company/openamp" class="h-full">
+          <Icon
+            name="mdi:linkedin"
+            class="w-6 text-white hover:text-openampred"
+          />
         </a>
         <a href="https://github.com/OpenAMP/website">
-          <FaBrandsGithubAlt
-            class="w-[14px] text-white mr-4 hover:text-openampred"
+          <Icon
+            name="mdi:github"
+            class="w-6 text-white hover:text-openampred"
           />
         </a>
         <a href="https://www.youtube.com/@openamp">
-          <TiSocialYoutubeCircular
-            class="w-[16px] text-white mr-4 hover:text-openampred"
+          <Icon
+            name="mdi:youtube"
+            class="w-6 text-white hover:text-openampred"
           />
         </a>
       </div>
     </div>
-    <div class="flex flex-row justify-center">
+    <div class="flex flex-row justify-center my-4">
       <a href="/">
         <Image class="w-[80px]" src={LinaroLogo} alt="logo" />
       </a>

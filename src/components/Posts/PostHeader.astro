@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import logo from "../../assets/images/content/openAMP_LOGOMARKX.svg";
 import dayjs from "dayjs";
+import { getEntry } from "astro:content";
+import { getEntries } from "astro:content";
 
 const { data } = Astro.props;
 
@@ -11,6 +13,10 @@ const dateString = dateObj.format("dddd, MMMM D, YYYY");
 const readTime = `${Math.ceil(
   data.data.description.split(" ").length / 183
 )} min read`;
+
+const author = await getEntry("authors", data.data.author.id);
+
+const tags = await getEntries(data.data.tags);
 ---
 
 <div class="bg-[#f8f9fa]">
@@ -19,29 +25,27 @@ const readTime = `${Math.ceil(
       <div
         class="flex md:flex-row flex-col max-w-[1800px] items-center mx-auto md:mx-0"
       >
-        <Image
-          class="w-[300px] transition ease-out delay-100 rounded-[50%]"
-          src={logo}
-          alt="logo"
-        />
-        <div class="flex flex-col ml-4">
+        <div class="w-48 overflow-clip">
+          <Image class="object-cover" src={logo} alt="logo" />
+        </div>
+        <div class="flex flex-col ml-4 text-md">
           <!-- Added ml-4 for spacing -->
           <div>
-            <div class="text-[1.25rem] mx-2 p-3">
-              <strong class="pr-4">{data.data.author}</strong> |
-              <span class="text-[1rem] px-4 font-normal">{dateString}</span> | <span
-                class="font-bold text-xs pr-4">{readTime}</span
+            <div class="mx-2 p-3">
+              <strong class="pr-4">{author.data.name}</strong> |
+              <span class="px-4 font-normal">{dateString}</span> | <span
+                class="font-bold pr-4">{readTime}</span
               >
             </div>
             <div class="flex flex-wrap p-3">
               {
-                data.data.tags.map((item: any) => (
+                tags.map((item: any) => (
                   <a
-                    class="mx-2 hover:bg-[#DBE0E5]  cursor-pointer no-underline text-black"
+                    class="mx-2 hover:bg-[#DBE0E5]  cursor-pointer no-underline text-black p-2"
                     role="button"
-                    href={`/news/tags/${item}`}
+                    href={`/news/tags/${item.slug}`}
                   >
-                    {item.toUpperCase()}
+                    {item.data.name.toUpperCase()}
                   </a>
                 ))
               }

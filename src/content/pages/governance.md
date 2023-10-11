@@ -1,25 +1,26 @@
 ---
 main_title: Governance
 main_body: As the OpenAMP Project governance gets defined, it will be documented here.
+slug: governance
 ---
 
-# <span style="font-size: 38.4px">Introduction
+## Introduction
 
 Governance discussions are typically held during the OpenAMP Technical Steering Committee meetings.
 
-# <span style="font-size: 38.4px">Strategic and Technical Direction
+## Strategic and Technical Direction
 
-## <h2 style="text-align: left ;font-size: 32px">Board<h2>
+### Board
 
 The OpenAMP Project board consists of a representative from each of the member companies. For more details regarding the Board, please refer to the [Project Charter][project charter].
 
-## <h2 style="text-align: left;font-size: 32px">Technical Steering Committee</h2>
+### Technical Steering Committee
 
 The Technical Steering Committee (TSC) calls are open to all. Items requiring a vote are voted upon by a representative from each of the member companies. To be notified of TSC calls, please subscribe to the TSC mailing list [via the OpenAMP Project mailing lists page][openamp mailing lists page].
 
 For more details regarding the TSC, please refer to the [Project Charter][project charter].
 
-## <h2 style="text-align: left;font-size: 32px">Working Groups</h2>
+### Working Groups
 
 The OpenAMP Working Groups are currently:
 
@@ -31,7 +32,7 @@ To be notified of working group calls, please subscribe to the corresponding wor
 
 To review past meeting notes of the working groups, please visit the [Meeting notes page][openamp meeting notes page].
 
-# <span style="font-size: 38.4px">Membership
+## Membership
 
 It is not a requirement to be employed at a Member company to participate as a developer or in the OpenAMP Technical Steering Committee. Community participation is welcome!
 
@@ -39,15 +40,15 @@ Governance of the community project is overseen by a board of representatives fr
 
 To get more information about membership, contact [enquiries@openampproject.org](mailto:enquiries@openampproject.org "Enquiries email")
 
-# <span style="font-size: 38.4px">Consensus and Conflict Resolution
+## Consensus and Conflict Resolution
 
 Initial discussion at [October 2020 TSC call](https://github.com/OpenAMP/open-amp/wiki/TSC-Meeting-Notes-2020#20201009).
 
-# <span style="font-size: 38.4px">Code of Conduct
+## Code of Conduct
 
 Published at the OpenAMP [code of conduct][code of conduct] page.
 
-# <span style="font-size: 38.4px">Development Process
+## Development Process
 
 The development process in this section applies to the libmetal and open-amp libraries and any RTOS code in openamp-system-reference.
 
@@ -55,13 +56,13 @@ The pull request model applies to all OpenAMP repositories, except from the kern
 
 The kernel staging repository accepts only pull request from OpenAMP maintainers. Patches for the kernel should be sent to the [linux-remoteproc@vger.kernel.org](mailto:linux-remoteproc@vger.kernel.org) mailing list.
 
-## <h2 style="text-align: left;font-size: 32px">Maintainers</h2>
+## Maintainers
 
 Maintainers are nominated and voted upon by the TSC. They should be the only ones who can commit to the repositories. As with everyone else, they must use Pull Requests.
 
 [Arnaud Pouliquen][arnaud github] and [Ed Mooring][ed github] are the maintainers of [libmetal][libmetal github] and lib [open-amp][open-amp github]. (2020-02-20)
 
-## <h2 style="text-align: left;font-size: 32px">Coding Standards</h2>
+## Coding Standards
 
 ### Coding Style
 
@@ -75,7 +76,7 @@ New OpenAMP code should follow the [Zephyr coding style][zephyr coding style] an
 
 To be discussed. C99?
 
-## <h2 style="text-align: left;font-size: 32px">Development Workflow</h2>
+## Development Workflow
 
 All development will be done using the standard GitHub workflow of pull requests. (2020-02-20)
 
@@ -104,7 +105,7 @@ TO DO: Add guidelines once they get baked
 Sphinx and Doxygen are used.
 The Documentation has to be be updated for any new feature or API update.
 
-## <h2 style="text-align: left;font-size: 32px">Branching and Tagging Strategy</h2>
+## Branching and Tagging Strategy
 
 ### Development on main
 
@@ -118,7 +119,7 @@ A release branch is created from the main branch on the release, for maintenance
 
 At the time of the release, the release branch will be tagged. This will help enable reproducible builds.
 
-## <h2 style="text-align: left;font-size: 32px">Releases</h2>
+## Releases
 
 ### Release Frequency
 
@@ -160,7 +161,7 @@ Topic to be revisited.
 
 See [https://wiki.yoctoproject.org/wiki/Stable_branch_maintenance](https://wiki.yoctoproject.org/wiki/Stable_branch_maintenance)
 
-## <h2 style="text-align: left;font-size: 32px">Interface Stability Policy</h2>
+## Interface Stability Policy
 
 ### API Stability
 
@@ -188,7 +189,7 @@ The wire protocol describes the interactions of two independent CPUs in an AMP s
 
 This is being discussed on the TSC mailing list in the [thread "API and Wire protocol stability"](https://lists.openampproject.org/archives/list/tsc@lists.openampproject.org/thread/6PEWEBRDTEX6GOMFF5YOO7YRMX5T5SCD/).
 
-## <h2 style="text-align: left;font-size: 32px">Certification Concerns</h2>
+## Certification Concerns
 
 ### Security and Safety
 

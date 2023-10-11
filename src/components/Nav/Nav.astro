@@ -1,22 +1,52 @@
 ---
-import { getEntry } from "astro:content";
-import NavLinks from "./NavLinks";
+import Dropdown from "./Dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Logo from "../../assets/openAMP_LOGOMARKX.png";
 import { Image } from "astro:assets";
-import logo from "../../assets/openAMP_LOGOMARKX.png";
-const {
-  data: { links },
-}: any = await getEntry("components", "nav");
+import { getEntry } from "astro:content";
+
+const navData = await getEntry("data", "nav");
+
 ---
 
-<nav
-  class="bg-white px-10 py-4 align-top fixed top-0 left-0 right-0 z-10 h-16 w-full"
->
-  <div
-    class="max-w-[1200px] mx-auto justify-between flex flex-row items-center"
-  >
-    <a href="/" class="text-xl md:text-2xl">
-      <Image class="w-10" src={logo} alt="logo" />
-    </a>
-    <NavLinks pages={links} client:load />
-  </div>
-</nav>
+<header class="flex flex-col lg:flex-row justify-around items-center bg-white">
+  <Astronav>
+    <div class="flex w-full lg:w-auto items-center justify-between px-8">
+      <a href="/" class="text-lg m-2"
+        ><Image src={Logo} alt="OpenAMP logo" width={48}  /></a
+      >
+      <div class="block lg:hidden">
+        <MenuIcon class="w-4 h-4 text-black" />
+      </div>
+    </div>
+    <MenuItems
+      class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 text-black "
+    >
+      <ul class="flex flex-col lg:flex-row lg:gap-3 items-center">
+        {
+          navData.data.links.map((item: any, index: number) => (
+            <>
+              {item.options && (
+                <Dropdown
+                  title={item.label}
+                  children={item.options}
+                  lastItem={index === item.options.length - 1}
+                />
+              )}
+
+              {!item.options && (
+                <div class="my-5 relative  ">
+                  <div class="nav-hover transition">
+                    <a href={item.url} class="flex lg:px-3 py-2 text-inherit ">
+                      {item.label}
+                    </a>
+                  </div>
+                </div>
+              )}
+            </>
+          ))
+        }
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>

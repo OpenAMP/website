@@ -1,18 +1,18 @@
 ---
 import { getCollection } from "astro:content";
-import BaseHead from "../../../components/BaseHead.astro";
+import BaseHead from "../../../components/Head/BaseHead.astro";
 import BlogsContainer from "../../../components/News/BlogsHero.astro";
 import MainLayout from "../../../layouts/MainLayout.astro";
 
 const tags = await getCollection("tags");
 const sortedTags = tags.sort();
-
-const buttonsPerLine = 10;
-const lines = Math.ceil(sortedTags.length / buttonsPerLine);
 ---
 
 <html>
-  <BaseHead />
+  <BaseHead
+    title="Tagged News Posts - OpenAMP Project"
+    description="Find OpenAMP news posts by tag here."
+  />
   <MainLayout>
     <BlogsContainer />
     <div class="flex flex-col items-start p-8 md:p-12 max-w-[1100px] mx-auto">

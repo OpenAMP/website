@@ -2,7 +2,7 @@
 import { getEntry } from "astro:content";
 import AboutHero from "../components/About/AboutHero.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import BaseHead from "../components/BaseHead.astro";
+import BaseHead from "../components/Head/BaseHead.astro";
 import Members from "../components/About/Members.astro";
 
 const about = await getEntry("pages", "about");
@@ -12,13 +12,13 @@ const { Content } = await render();
 ---
 
 <html lang="en">
-  <BaseHead />
+  <BaseHead title={"About - OpenAMP Project"} description={data.main_body} />
   <MainLayout>
     <AboutHero data={data} />
     <Members />
     <section>
       <h2 class="mb-8">{data.membership_title}</h2>
-      <div class="text-center text-lg">
+      <div class="text-center text-lg prose-xl mb-8">
         <Content />
       </div>
     </section>

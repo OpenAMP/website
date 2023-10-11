@@ -1,15 +1,14 @@
 ---
-import { getCollection, getEntry } from "astro:content";
-import BaseHead from "../../components/BaseHead.astro";
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/Head/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import Post from "../../components/Posts/Post.astro";
 import PostHeader from "../../components/Posts/PostHeader.astro";
 
 export async function getStaticPaths({}) {
-  const projects = await getCollection("projects");
-
-  const paths = projects.map((blog) => ({
+  const news = await getCollection("news");
+  const paths = news.map((blog) => ({
     params: {
       blog: blog.slug,
     },
@@ -25,36 +24,33 @@ const { Content } = await blog.render();
 ---
 
 <html>
-  <BaseHead />
+  <BaseHead
+    title={blog.data.title + " - OpenAMP Project"}
+    description={blog.data.description}
+    type="article"
+  />
 
   <MainLayout>
     <Header>
       <div class="h-[100px]"></div>
     </Header>
     <div class="text-left p-4">
-      <h1 class="text-[2em] font-medium mx-auto max-w-[1100px]">
+      <h1 class="text-[2em] font-medium mx-auto max-w-5xl px-2 md:px-8">
         {blog.data.title}
       </h1>
     </div>
     <PostHeader data={blog} />
 
     <div
-      class="text-left flex flex-col p-4 md:p-12 blog-content mx-auto max-w-[1100px]"
+      class="prose-xl max-w-5xl first-line:text-left p-4 md:p-12 blog-content mx-auto"
     >
-      <div class="text-[1.5rem]">
-        <Content />
-      </div>
-      <Post />
+      <Content />
     </div>
+    <Post />
   </MainLayout>
 
   <style is:global lang="scss">
     .blog-content {
-      .blockquote-container {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-      }
       ul {
         list-style-type: disc;
         li {
@@ -81,11 +77,11 @@ const { Content } = await blog.render();
 
       blockquote:before {
         content: "\201C";
+        font-family: Serif;
         color: #dc4a4a;
         font-size: 5em;
         left: 10px;
         margin-right: 25px;
-        top: -10px px;
       }
     }
   </style>

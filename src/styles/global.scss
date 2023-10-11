@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
-  color: black;
+  color: #212529
 }
 
 @layer base {
+ 
   h1 {
     width: auto;
     font-size: 3rem;
@@ -23,13 +25,25 @@ html {
     padding: theme("spacing.6");
     box-shadow: theme("boxShadow.xl");
   }
-  p {
-    margin-bottom: 1rem;
-  }
+
   a {
     @apply text-openampred;
   }
   section {
     @apply p-4 max-w-4xl mx-auto;
   }
+}
+
+
+@layer utilities {
+	.nav-hover {
+
+		:before {
+			@apply w-0 lg:bg-openampred content-[""] bottom-0 h-1 block absolute left-[50%] duration-150 
+		}
+		:before:hover {
+				@apply w-full left-0
+		}
+
+	}
 }
