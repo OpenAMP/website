@@ -1,5 +1,5 @@
 ---
-title: Cookies Policy
+main_title: Cookies Policy
 slug: cookies
 description: |-
   Update and remove cookies from your browser set by our site.
