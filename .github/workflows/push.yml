@@ -21,9 +21,8 @@ jobs:
 
       - name: Build site
         run: |
+          source ~/.nvm/nvm.sh
           cd ${{ github.workspace }}/website
-          pwd
-          whoami
           nvm use 18
           npm install --global yarn
           yarn install
