@@ -23,14 +23,7 @@ jobs:
         run: cat "$GITHUB_WORKSPACE/website/.github-env-${GITHUB_REF##*/}" >> $GITHUB_ENV
 
       - name: Build site
-        run: |
-          source ~/.nvm/nvm.sh
-          cd ${{ github.workspace }}/website
-          nvm use 18
-          npm install --global yarn
-          yarn install
-          if [ -d "dist" ]; then rm -Rf dist; fi
-          yarn build
+        run: cd ${{ github.workspace }}/website && /srv/github-action-scripts/build-astro-site.sh
 
       - name: Check links
         run: /srv/github-action-scripts/check-links.sh ${{ github.workspace }}/website/dist
