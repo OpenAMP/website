@@ -19,6 +19,9 @@ jobs:
         with:
           path: website
 
+      - name: Initialise environment
+        run: cat "$GITHUB_WORKSPACE/website/.github-env-${GITHUB_REF##*/}" >> $GITHUB_ENV
+
       - name: Build site
         run: |
           source ~/.nvm/nvm.sh
