@@ -29,6 +29,7 @@ jobs:
           nvm use 18
           npm install --global yarn
           yarn install
+          if [ -d "dist" ]; then rm -Rf dist; fi
           yarn build
 
       - name: Check links
