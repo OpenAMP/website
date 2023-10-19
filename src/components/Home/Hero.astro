@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import Header from "../Header.astro";
 import { Image } from "astro:assets";
 import logoImage from "../../assets/openAMP_combox_dark.svg";
 import FirstItem from "../News/FirstItem.astro";
 import dayjs from "dayjs";
+import heroImage from "../../assets/images/triangle_background.png";
 
 const { data } = Astro.props;
 const blogs = await getCollection("news");
@@ -13,16 +13,17 @@ const blogLists = blogs
   .slice(0, 2);
 ---
 
-<Header>
-  <div
-    id="carouselExampleControls"
-    class="relative"
-    data-te-carousel-init
-    data-te-ride="carousel"
-  >
-    <!--Carousel items-->
+<header
+  class=`text-center relative text-white  p-4 md:p-12 h-full w-full min-h-[40rem]`
+  style=`background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${heroImage.src}); background-size: cover; background-position: center`
+  data-te-carousel-init
+  data-te-ride="carousel"
+  id="carouselExampleControls"
+>
+  <!--Carousel items-->
+  <div class="h-full mx-auto my-auto">
     <div
-      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+      class="relative w-full mx-auto my-auto overflow-hidden after:clear-both after:block after:content-['']"
     >
       <!--First item-->
       <div
@@ -30,92 +31,93 @@ const blogLists = blogs
         data-te-carousel-item
         data-te-carousel-active
       >
-        <Image height={300} src={logoImage} alt="openAMP Logo" />
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <Image height={300} src={logoImage} alt="openAMP Logo" />
 
-        <p class="leading-normal text-center max-w-xl text-xl mb-4">
-          {data.main_body}
-        </p>
-        <a
-          href="https://github.com/OpenAM"
-          target="_blank"
-          class="bg-openampred align-middle mt-2 mx-auto p-4 rounded text-md text-center transition ease-in-out hover:bg-red-600 text-white cursor-pointer"
-          >View on Github</a
-        >
+          <p class="leading-normal text-center max-w-xl text-xl mb-4">
+            {data.main_body}
+          </p>
+          <a
+            href="https://github.com/OpenAM"
+            target="_blank"
+            class="bg-openampred align-middle mt-2 mx-auto p-4 rounded text-md text-center transition ease-in-out hover:bg-red-600 text-white cursor-pointer"
+            >View on Github</a
+          >
+        </div>
       </div>
       <!--Second item-->
       <div
-        class="relative text-black float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        class="relative text-black w-full float-left -mr-[100%] hidden transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none h-full"
         data-te-carousel-item
       >
         <FirstItem {...blogLists[0]} />
       </div>
       <!--Third item-->
       <div
-        class="relative text-black float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        class="relative text-black float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none h-full"
         data-te-carousel-item
       >
         <FirstItem {...blogLists[1]} />
       </div>
     </div>
-
-    <!--Carousel controls - prev item-->
-    <button
-      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-openampred hover:no-underline hover:opacity-90 hover:outline-none focus:text-openampred focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleControls"
-      data-te-slide="prev"
-    >
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Previous</span
-      >
-    </button>
-    <!--Carousel controls - next item-->
-    <button
-      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-openampred hover:no-underline hover:opacity-90 hover:outline-none focus:text-openampred focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleControls"
-      data-te-slide="next"
-    >
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Next</span
-      >
-    </button>
   </div>
-  <script>
-    import { Carousel, initTE } from "tw-elements";
+  <!--Carousel controls - prev item-->
+  <button
+    class="absolute bottom-0 left-0 sm:top-0 z-[1] flex w-[10%] items-center justify-end border-0 bg-none py-4 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-openampred hover:no-underline hover:opacity-90 hover:outline-none focus:text-openampred focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleControls"
+    data-te-slide="prev"
+  >
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <!--Carousel controls - next item-->
+  <button
+    class="absolute bottom-0 right-0 sm:top-0 z-[1] flex w-[10%] items-center justify-start border-0 bg-none py-4 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-openampred hover:no-underline hover:opacity-90 hover:outline-none focus:text-openampred focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleControls"
+    data-te-slide="next"
+  >
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</header>
+<script>
+  import { Carousel, initTE } from "tw-elements";
 
-    initTE({ Carousel });
-  </script>
-</Header>
+  initTE({ Carousel });
+</script>
