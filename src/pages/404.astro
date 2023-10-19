@@ -1,0 +1,30 @@
+---
+import { getEntry } from "astro:content";
+import BaseHead from "../components/Head/BaseHead.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const about = await getEntry("pages", "404");
+const { data, render } = about;
+const { Content } = await render();
+---
+
+<html lang="en">
+  <BaseHead title={"404 - OpenAMP Project"} description={data.description} />
+  <MainLayout>
+    <section class="my-16 max-w-3xl mx-auto px-5">
+      <h1>Page Not Found</h1>
+      <h2 class="text-left font-bold text-xl my-4">
+        You can also find out more about Open AMP through the following links:
+      </h2>
+      <ul class="ml-5 list-disc">
+        {
+          data.links.map((link: any) => (
+            <li>
+              <a href={link.url}>{link.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </MainLayout>
+</html>
