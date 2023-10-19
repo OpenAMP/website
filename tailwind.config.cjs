@@ -26,8 +26,7 @@ module.exports = {
     },
   },
   plugins: [
-    // require("@tailwindcss/typography"),
-
+    require("@tailwindcss/typography"),
     require("tw-elements/dist/plugin.cjs"),
   ],
 };

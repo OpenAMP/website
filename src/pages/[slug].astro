@@ -8,7 +8,10 @@ import Header from "../components/Header.astro";
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
   const filteredPages = pages.filter(
-    (page) => page.id !== "homepage.md" && page.id !== "about.md"
+    (page) =>
+      page.id !== "homepage.md" &&
+      page.id !== "about.md" &&
+      page.id !== "404.md"
   );
   return filteredPages.map((page) => {
     return {
