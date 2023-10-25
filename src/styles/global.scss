@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-  color: #212529
+  color: #212529;
 }
 
 @layer base {
- 
   h1 {
     width: auto;
     font-size: 3rem;
@@ -26,6 +24,14 @@ html {
     box-shadow: theme("boxShadow.xl");
   }
 
+  .truncate-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
   a {
     @apply text-openampred;
   }
@@ -34,16 +40,13 @@ html {
   }
 }
 
-
 @layer utilities {
-	.nav-hover {
-
-		:before {
-			@apply w-0 lg:bg-openampred content-[""] bottom-0 h-1 block absolute left-[50%] duration-150 
-		}
-		:before:hover {
-				@apply w-full left-0
-		}
-
-	}
+  .nav-hover {
+    :before {
+      @apply w-0 lg:bg-openampred content-[""] bottom-0 h-1 block absolute left-[50%] duration-150;
+    }
+    :before:hover {
+      @apply w-full left-0;
+    }
+  }
 }

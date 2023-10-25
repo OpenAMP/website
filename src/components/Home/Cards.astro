@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import OpenAMPLogo from "../../assets/images/content/openAMP_LOGOMARKX.png";
+import dayjs from "dayjs";
+
+const blogs = await getCollection("news");
+
+const blogLists = blogs
+  .sort((a, b) => dayjs(b.data.date).diff(dayjs(a.data.date)))
+  .slice(0, 3);
+
+const ConvertDate = (input: any) => {
+  const dateObj = dayjs(input);
+  const dateString = dateObj.format("dddd, MMMM D, YYYY");
+  return dateString;
+};
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 mb-4">
+  {
+    blogLists.map((blog: any) => (
+      <button
+        onclick={`window.location.href='/news/${blog.slug}/';`}
+        class="text-inherit no-underline cursor-pointer"
+      >
+        <div class="flex w-full md:w-[90%] lg:w-[90%] mx-auto mb-4 h-[90%]">
+          <div class="card h-full opacity-100 flex-col items-center shadow-lg duration-300 hover:drop-shadow-xl hover:scale-105 m-4 p-4 w-full">
+            <Image
+              class="w-64 mx-auto"
+              src={blog.data.image}
+              alt={blog.data.title}
+            />
+            <div class="flex w-full justify-between items-center my-4">
+              <>
+                <i class="text-xl">OpenAMP</i>
+                <Image class="w-12" src={OpenAMPLogo} alt="OpenAMP logo" />
+              </>
+            </div>
+            <h2 class="text-xl text-left">{blog.data.title}</h2>
+            <p class="text-slate-500 w-full">{ConvertDate(blog.data.date)}</p>
+            <p class="text-left mb-4 truncate-text">{blog.data.description}</p>
+          </div>
+        </div>
+      </button>
+    ))
+  }
+</div>
