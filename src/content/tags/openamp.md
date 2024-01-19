@@ -1,3 +1,3 @@
 ---
-name: OpenAPM
+name: OpenAMP
 ---
