@@ -7,4 +7,4 @@ SoCs (System on a Chip) are becoming more heterogeneous, with multiple processor
 
 OpenAMP (Open Asymmetric Multi-Processing) is a framework providing the software components needed to enable the development of software applications for AMP systems. It allows operating systems to interact within a broad range of complex homogeneous and heterogeneous architectures and allows asymmetric multiprocessing applications to leverage parallelism offered by the multicore configuration.
 
-[This presentation](/docs/presentations/OpenAMP-Elevator-Pitch-2022-Q1.pdf) gives some brief details about OpenAMP.
+[This presentation](/docs/presentations/OpenAMP-Elevator-Pitch-2024-Q1.pdf) gives some brief details about OpenAMP.
