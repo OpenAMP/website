@@ -10,10 +10,6 @@
   image: ../../assets/images/members/Nordic_RGB_Horiz.jpg
   alt: Nordic Logo
   url: https://www.nordicsemi.com/
-- name: NXP Logo
-  image: ../../assets/images/members/nxp.jpg
-  alt: NXP Logo
-  url: https://www.nxp.com/
 - name: Siemens
   image: ../../assets/images/members/sie-logo-petrol-rgb.png
   alt: Siemens Logo
