@@ -197,7 +197,7 @@ We expect OpenAMP libraries will be used in security and safety sensitive areas.
 
 [openamp mailing lists page]: http://lists.openampproject.org
 [openamp meeting notes page]: https://github.com/OpenAMP/open-amp/wiki/Meeting-Notes
-[project charter]: ../docs/OpenAMPProject_Charter_Approved2020Mar06BoardMeeting.pdf
+[project charter]: ../docs/OpenAMPProject_Charter_Approved2024AugEmailVote.pdf
 [arnaud github]: https://github.com/arnopo
 [ed github]: https://github.com/edmooring
 [libmetal github]: https://github.com/OpenAMP/libmetal
