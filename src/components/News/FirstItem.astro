@@ -43,14 +43,17 @@ const convertedTitle = findUrl(data.title);
         <p class="text-slate-500 mb-2">{dateString}</p>
         <ul class="flex flex-wrap gap-2 mb-2">
           {
-            data.tags.map((tag: any) => (
-              <li
-                onclick={`window.location.href='/news/tags/${tag.slug}/';`}
-                class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5] transition ease-in-out delay-150 rounded-md"
-              >
-                {tag.slug.toUpperCase()}
-              </li>
-            ))
+            Array.isArray(data.tags) &&
+              data.tags
+                .filter((tag) => typeof tag === "string")
+                .map((tag: any) => (
+                  <li
+                    onclick={`window.location.href='/news/tags/${tag}/';`}
+                    class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5] transition ease-in-out delay-150 rounded-md"
+                  >
+                    {tag.toUpperCase()}
+                  </li>
+                ))
           }
         </ul>
         <p class="mb-4 text-xl text-left">{data.description}</p>

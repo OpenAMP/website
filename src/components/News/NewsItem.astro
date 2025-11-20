@@ -33,13 +33,16 @@ const convertedTitle = slug;
         </div>
         <p class="text-left mb-4">{data.description}</p>
         <ul class="flex flex-wrap gap-2 w-full">
-          {data.tags.map((tag: any) => (
-            <li class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5] transition ease-in-out delay-150 rounded-md">
-              <a class="text-inherit" href={`/news/tags/${tag.slug}`}>
-                {tag.slug.toUpperCase()}
-              </a>
-            </li>
-          ))}
+          {Array.isArray(data.tags) &&
+            data.tags
+              .filter((tag) => typeof tag === "string")
+              .map((tag: any) => (
+                <li class="bg-gray-100 p-2 text-sm text-gray-600 hover:bg-[#DBE0E5] transition ease-in-out delay-150 rounded-md">
+                  <a class="text-inherit" href={`/news/tags/${tag}`}>
+                    {tag.toUpperCase()}
+                  </a>
+                </li>
+              ))}
         </ul>
       </div>
     </button>
