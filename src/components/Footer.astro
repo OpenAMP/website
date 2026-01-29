@@ -2,7 +2,7 @@
 import { getEntry } from "astro:content";
 import { Image } from "astro:assets";
 import LinaroLogo from "../assets/images/content/Linaro-logo-white.png";
-import Icon from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const footer = await getEntry("data", "footer");
 const { data }: any = footer;
@@ -67,7 +67,7 @@ const { data }: any = footer;
       -->
     </div>
     <div class="flex flex-row flex-wrap justify-center items-center gap-3">
-      <p class="h-full">Copyright @ 2023 Linaro</p>
+      <p class="h-full">{`Copyright @ ${new Date().getFullYear()} Linaro`}</p>
       <a
         href="https://www.linaro.org/legal/"
         class="cursor-pointer no-underline text-white hover:text-openampred hover:underline"
