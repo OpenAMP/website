@@ -13,9 +13,9 @@ module.exports = {
         openampred: "#dc4a4a",
         black: "#212529",
       },
-      maxWidth: {
-        "1/2": "50%",
-      },
+      // maxWidth: {
+      //   "1/2": "50%",
+      // },
     },
     fontFamily: {
       sans: ["Lato", "system-ui", ...defaultTheme.fontFamily.sans],
