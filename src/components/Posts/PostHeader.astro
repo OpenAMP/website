@@ -2,12 +2,15 @@
 import { Image } from "astro:assets";
 import logo from "../../assets/images/content/openAMP_LOGOMARKX.svg";
 import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
 import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
 
 const { data } = Astro.props;
 
-const dateObj = dayjs(data.date);
+dayjs.extend(utc);
+
+const dateObj = dayjs(data.data.date).utc();
 const dateString = dateObj.format("dddd, MMMM D, YYYY");
 
 const readTime = `${Math.ceil(

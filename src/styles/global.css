@@ -1,6 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@source "../../node_modules/tw-elements";
+
+@plugin "@tailwindcss/typography";
+@plugin "tw-elements/plugin.cjs";
+
+@theme {
+  --color-secondary: rgb(87, 87, 87);
+  --color-openampred: #dc4a4a;
+  --color-black: #212529;
+
+  --font-sans: "Lato", system-ui, sans-serif;
+}
 
 
 html {
@@ -8,7 +19,6 @@ html {
 }
 
 @layer base {
- 
   h1 {
     width: auto;
     font-size: 3rem;
@@ -20,10 +30,10 @@ html {
     text-align: center;
   }
   .card {
-    background-color: theme("colors.white");
-    border-radius: theme("borderRadius.3xl");
-    padding: theme("spacing.6");
-    box-shadow: theme("boxShadow.xl");
+    background-color: var(--color-white);
+    border-radius: var(--radius-3xl);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-xl);
   }
 
   a {
@@ -34,16 +44,14 @@ html {
   }
 }
 
-
 @layer utilities {
-	.nav-hover {
-
-		:before {
-			@apply w-0 lg:bg-openampred content-[""] bottom-0 h-1 block absolute left-[50%] duration-150 
-		}
-		:before:hover {
-				@apply w-full left-0
-		}
-
-	}
+  .nav-hover {
+    &:before {
+      @apply w-0 lg:bg-openampred content-[""] bottom-0 h-1 block absolute left-[50%] duration-150;
+    }
+    
+    &:hover:before {
+        @apply w-full left-0;
+    }
+  }
 }
