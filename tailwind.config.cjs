@@ -20,10 +20,10 @@ module.exports = {
     fontFamily: {
       sans: ["Lato", "system-ui", ...defaultTheme.fontFamily.sans],
     },
-    transitionProperty: {
-      maxHeight: "max-height",
-      spacing: "margin, padding",
-    },
+    // transitionProperty: {
+    //   maxHeight: "max-height",
+    //   spacing: "margin, padding",
+    // },
   },
   plugins: [
     require("@tailwindcss/typography"),
