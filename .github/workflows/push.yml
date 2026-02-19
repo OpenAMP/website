@@ -27,6 +27,7 @@ jobs:
           source ~/.nvm/nvm.sh
           nvm install 24
           nvm use 24
+          corepack enable yarn
           cd ${{ github.workspace }}/website && /srv/github-action-scripts/build-astro-site.sh
 
       - name: Check links
