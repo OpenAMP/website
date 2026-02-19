@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import BaseHead from "../components/Head/BaseHead.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
-// import "../styles/global.scss";
+// import "../styles/global.css";
 
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
