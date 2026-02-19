@@ -4,14 +4,19 @@ const { id } = Astro.props;
 
 <script
   is:inline
-  async
+  type="text/plain"
+  data-category="analytics_cookies"
   src={`https://www.googletagmanager.com/gtag/js?id=${id}`}></script>
 
-<script is:inline define:vars={{ id }}>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    window.dataLayer.push(arguments);
-}
-gtag("js", new Date());
-gtag("config", id);
+<script 
+  is:inline 
+  type="text/plain" 
+  data-category="analytics_cookies" 
+  define:vars={{ id }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+      window.dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", id);
 </script>

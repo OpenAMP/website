@@ -1,4 +1,5 @@
 ---
+import "vanilla-cookieconsent/dist/cookieconsent.css";
 import "../../styles/cookies.css";
 ---
 
@@ -7,6 +8,7 @@ import "../../styles/cookies.css";
 
   window.addEventListener("load", function () {
     CookieConsent.run({
+      manageScriptTags: true,
       guiOptions: {
         consentModal: {
           layout: "cloud", // box/cloud/bar/popup
