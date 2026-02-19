@@ -2,7 +2,7 @@ name: PullRequestAction
 
 on:
   pull_request_target:
-    branches: [ main ]
+    branches: [main]
 
 # Cancel in-progress jobs or runs for the current pull request
 concurrency:
@@ -14,7 +14,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Fetch git repository
-        uses: actions/checkout@v4.3.1
+        uses: actions/checkout@v6.0.2
         with:
           fetch-depth: 0
           path: website
@@ -35,7 +35,8 @@ jobs:
       - name: Build site
         run: |
           source ~/.nvm/nvm.sh
-          nvm use 20
+          nvm install 24
+          nvm use 24
           cd ${{ github.workspace }}/website && /srv/github-action-scripts/build-astro-site.sh
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
