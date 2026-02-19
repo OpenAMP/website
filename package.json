@@ -31,12 +31,12 @@
   },
   "overrides": {
     "chokidar": "^3.5.3",
-    "cheerio": "1.0.0",
+    "cheerio": "1.2.0",
     "vite": "^6.0.0"
   },
   "resolutions": {
     "chokidar": "^3.5.3",
-    "cheerio": "1.0.0",
+    "cheerio": "1.2.0",
     "vite": "^6.0.0"
   }
 }
