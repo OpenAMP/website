@@ -10,10 +10,6 @@
   image: ../../assets/images/members/Nordic_RGB_Horiz.jpg
   alt: Nordic Logo
   url: https://www.nordicsemi.com/
-- name: Siemens
-  image: ../../assets/images/members/sie-logo-petrol-rgb.png
-  alt: Siemens Logo
-  url: http://www.siemens.com/embedded/
 - name: ST Logo
   image: ../../assets/images/members/logo-ST-2022.png
   alt: ST Logo
