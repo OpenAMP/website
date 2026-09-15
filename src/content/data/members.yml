@@ -1,3 +1,7 @@
+- name: AMD
+  image: ../../assets/images/members/AMD_E_Blk_RGB.png
+  alt: AMD Logo
+  url: https://www.amd.com/
 - name: Arm
   image: ../../assets/images/members/arm.jpg
   alt: Arm Logo
@@ -10,10 +14,6 @@
   image: ../../assets/images/members/Nordic_RGB_Horiz.jpg
   alt: Nordic Logo
   url: https://www.nordicsemi.com/
-- name: Siemens
-  image: ../../assets/images/members/sie-logo-petrol-rgb.png
-  alt: Siemens Logo
-  url: http://www.siemens.com/embedded/
 - name: ST Logo
   image: ../../assets/images/members/logo-ST-2022.png
   alt: ST Logo
@@ -26,7 +26,4 @@
   image: ../../assets/images/members/RGB-WNDRVR-Logo-Black-Teal.png
   alt: Wind River Logo
   url: https://www.windriver.com/
-- name: Xilinx Logo
-  image: ../../assets/images/members/AMD_Xilinx.png
-  alt: Xilinx Logo
-  url: https://www.xilinx.com/
+
